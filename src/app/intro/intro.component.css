@@ -1,3 +1,4 @@
+
 .back {
   color: #fff;
   background: -webkit-linear-gradient(110deg, #204051 40%, rgba(0, 0, 0, 0) 30%),
@@ -87,10 +88,10 @@ a > span:after {
 }
 
 .header {
-  background: -webkit-linear-gradient(139deg, #204051 70%, #ffd31d 60%);
-  background: -o-linear-gradient(139deg, #204051 70%, #ffd31d 60%);
-  background: -moz-linear-gradient(139deg, #204051 70%, #ffed4b 60%);
-  background: linear-gradient(139deg, #204051 70%, #ffed4b 60%);
+  background: -webkit-linear-gradient(133deg, #204051 70%, #ffd31d 60%);
+  background: -o-linear-gradient(133deg, #204051 70%, #ffd31d 60%);
+  background: -moz-linear-gradient(133deg, #204051 70%, #ffed4b 60%);
+  background: linear-gradient(133deg, #204051 70%, #ffed4b 60%);
 }
 
 .header,
@@ -162,7 +163,6 @@ a > span:after {
   position: absolute;
   top: 30%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 .name1 {
@@ -199,14 +199,149 @@ a > span:after {
 .third-page
 {
   height: 600px;
-    color: #fff;
-    background: -webkit-linear-gradient(-130deg,#ffed4b 30%, rgba(0, 0, 0, 0) 30%), url('https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
-
+  color: #fff;
+  background: -webkit-linear-gradient(-130deg,#ffed4b 30%, rgba(0, 0, 0, 0) 30%), url('https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
   background-size: cover;
   background-position: 50% 21%;
-  text-align: right;
 }
 .about
 {
-  background-color: white;
+  background-color: #204051;
+  opacity: 0.6;
+}
+.about-me
+{
+  color:white;
+  font-size: 24px;
+}
+
+.forth-page
+{
+  background: -webkit-linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
+  background: -o-linear-gradient(45deg, #ffed4b 5s 50%, #ffd31d 50%);
+  background: -moz-linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
+  background: linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
+}
+
+.forth-page {
+  height: 100vh;
+  width: 100%;
+}
+.background1 {
+  background-image: url("../../assets/images/IMG_1191.JPG");
+  background-repeat: no-repeat;
+}
+.background2 {
+  background-image: url("../../assets/images/myself.jpg");
+}
+.background3 {
+  background-image: url("../../assets/images/myself2.jpeg");
+}
+
+.size {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  background-size: 100%;
+}
+
+.last
+{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.last1
+{
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.recent
+{
+  color : white;
+  font-size: 100px;
+}
+a.button {
+  position: relative;
+  display: inline-block;
+  width: 25.6em;
+  height: 6.3em;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+a.button svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.button svg g line,
+a.button svg g polyline,
+a.button svg g circle {
+  fill: none;
+  stroke: #fff;
+}
+a.button svg g line,
+a.button svg g polyline {
+  stroke-miterlimit: 10;
+}
+a.button svg g circle {
+  display: block;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.066em;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset ease-out 0.5s;
+  transition: stroke-dashoffset ease-out 0.5s;
+}
+a.button font {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+}
+a.button:hover {
+  -webkit-transform: translateZ(0) translateX(0.5em);
+          transform: translateZ(0) translateX(0.5em);
+}
+a.button:hover svg g circle {
+  stroke-dashoffset: 200;
+}
+
+.last2
+{
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 1px solid orange;
+  opacity: 0;
+  outline: none;
+  background: var(--light-secondary);
+  cursor: default;
 }

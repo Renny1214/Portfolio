@@ -10,6 +10,7 @@ import { WhatComponent } from './what/what.component';
 import { WorkComponent } from './work/work.component';
 import { IntroComponent } from './intro/intro.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     WhatComponent,
     WorkComponent,
     IntroComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

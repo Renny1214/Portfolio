@@ -1,4 +1,4 @@
-<diV class="pt-4 back ">
+<diV class="pt-4 back " id="tops">
   <nav class="navbar navbar-expand-sm justify-content-between">
     <a
       class="nav-link text-light effect-1 font-weight-bold"
@@ -51,7 +51,9 @@
     >
   </nav>
 
-  <div class="d-flex justify-content-center intro font-weight-bold mt-5 mr-5 ml-5 position-relative">
+  <div
+    class="d-flex justify-content-center intro font-weight-bold mt-5 mr-5 ml-5 position-relative"
+  >
     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
       Who.
     </div>
@@ -67,7 +69,17 @@
   </div>
 </diV>
 
-<div class="container-fluid header position-relative ">
+<div class="container-fluid header position-relative">
+    <button
+    type="button"
+    class="scroll-btn rounded shadow-lg p-2 position-absolute"
+    id="scrollBtn"
+    (click)="toTop()"
+  >
+    <span class="material-icons">
+      keyboard_arrow_up
+    </span>
+  </button>
   <div class="font-weight-bold text-light name">
     <div class="start-one" data-aos="fade-up">WHO I AM?</div>
   </div>
@@ -85,6 +97,76 @@
     </div>
   </div>
 </div>
-<diV class="third-page">
-    <div class="container about d-flex justify-content-center">hello </div>
+<diV class="third-page pt-5">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="container" data-aos="fade-up">
+        <div class="container about">
+          <div
+            class="container d-flex justify-content-center font-weight-bold about-me pt-5 mb-3"
+            data-aos="fade-up"
+          >
+            ABOUT ME
+          </div>
+          <div data-aos="fade-up">Hey stranger !!</div>
+          <div class="mt-2" data-aos="fade-up">
+            <div class="mb-2" data-aos="fade-up">
+              Hi, My name is Renny and I am a web developer. I am from
+              panchkula, haryana. I have a huge passion about designs, drawings,
+              sketches and paintings. I feel i have a gift very few posses that
+              is creativity.
+            </div>
+            <div class="mb-2" data-aos="fade-up">
+              From childhood i was fascinated by art, i had won many
+              competitions in my school. Even at university level i was the head
+              of creative team of university fest which was responsible for
+              decorating the whole university.
+            </div>
+            <div class="mb-2" data-aos="fade-up">
+              I use this gift in my web projects too, the perfect colors,
+              animations and design patterns exites me.
+            </div>
+            <div class="mb-2" data-aos="fade-up">
+              I see websites as a blank canvas where i just pour my imagination
+              and creativity while obviously retaining all the functionalities
+              required.
+            </div>
+            <div class="mb-5 pb-5 " data-aos="fade-up">
+              I love cooking, and dancing too. Hey enough about me lets know you
+              too. Feel free to reach out I love meeting people.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
 </diV>
+
+<div id="demo" class="carousel slide pt-5 pr-5 pl-5" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item background3 size active"></div>
+    <div class="carousel-item background1 size"></div>
+    <div class="carousel-item background2 size"></div>
+    <div class="carousel-item background4 size"></div>
+  </div>
+</div>
+
+<div class="forth-page pt-5 mt-5 position-relative">
+
+  <div class="last font-weight-bold">
+    <div class="recent" data-aos="fade-up" data-aos-easing="linear">Recent</div>
+  </div>
+  <div class="last1 font-weight-bold">
+    <div class="recent" data-aos="fade-up" data-aos-easing="linear">Work</div>
+  </div>
+  <div class="last2 font-weight-bold" >
+      <a class="button recent" href="/work" data-aos="fade-up" data-aos-easing="linear"><svg><g><line x2="227.62" y1="31.28" y2="31.28" ></line><polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline><circle cx="224.67" cy="30.94" r="30.5" transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)"></circle></g></svg>Check Out</a>
+    </div>
+</div>
