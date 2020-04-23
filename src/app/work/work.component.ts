@@ -13,130 +13,43 @@ export class WorkComponent implements OnInit {
   ngOnInit() {
     AOS.init({
     })
-    window.addEventListener("load", () => {
-      if (this.checkTech(this.skills)) {
-        this.displaySkills();
-      }
-    });
+   
   }
 
-  skills = "technical";
-  className = "custom-bg";
+  projects = [
+    {
+      title: "GeekyStore",
+      subHeading: "An Ecommerce Website",
+      desc:
+        "It is a complete dynamic website I made when I was in my early days,I was learning Angular and Springboot back then, This website is a skeletal frame for a full fledge website and have features like secure login, signup, products previews, category and price filters, search functionality to search your favorite product, cart, order history, ability to distinguish between the administrator and buyer giving adminstrator right to edit and add his products. User can change their data too if entered wrong. Technologies used were Angular7, Springboot, MySQL. This project lit a spark inside me and from here initialited my love for webapps.",
+      link1: "https://github.com/rishabh091/Ecommerce-website-frontend",
+       link2 : "https://github.com/rishabh091/Ecommerce-website-backend"
+    },
+    {
+      title: "SkyLine",
+      subHeading: "A Blog website",
+      desc:
+        "A complete dynamic website I made after the Geekystore webapp. This webapp made me learn both frontend design and important backend features like email verification system. The website is completey made by using Angular 8, Springboot and MySQL and have features like login, signup, an otp verification system for enter mail during signup, home page where new trending blogs will pop up, blog creation, user followers and following system, blogs of users whom you followed will be also displayed on homepage as well as in their profile. Abiliy to make blogs private so their only your followers can see your blogs, blog editing, user detail editing, custom categories, ability to like and comment blogs.",
+      link1:
+        "https://github.com/rishabh091/Blog-Website-Frontend",
+      link2:  "https://github.com/rishabh091/Blog-Wesite-Backend"
+    },
+    {
+      title: "Orange",
+      subHeading: "Cross platform music player",
+      desc:
+        "Someone rightly said 'Necessity is mother of invention', I am a huge music head I listen to music all day, it is such a sweet thing but the absence of a simple music player always bugged me so I created this offline music player that can play music present in my computer, having functionalities like playlist creation and song skips and previous songs. The design is quite simple because it was my first time creating a desktop application. Being a web developer I thought to use javascript in this webapp and used Angular 8 and Electron to convert it into .exe file. The electron made it possible to use this application on Mac as well as Linux. Thats the beauty of being a programmer right, We can create any technology we want.",
+      link1: 
+        "https://github.com/rishabh091/Orange-Music-Player"
+    }
+  ];
 
-  technicalSkills1 = [
-    {
-      name: "java",
-      level: 90
-    },
-    {
-      name: "c",
-      level: 50
-    },
-    {
-      name: "c++",
-      level: 50
-    },
-    {
-      name: "javascript",
-      level: 75
-    },
-    {
-      name: "typescript",
-      level: 75
-    },
-    {
-      name: "angular",
-      level: 75
-    },
-    {
-      name: "css",
-      level: 90
-    },
-    {
-      name: "html",
-      level: 90
-    }
-  ];
-  technicalSkills2 = [
-    {
-      name: "bootstrap",
-      level: 90
-    },
-    {
-      name: "springboot",
-      level: 80
-    },
-    {
-      name: "hibernate",
-      level: 70
-    },
-    {
-      name: "native android",
-      level: 25
-    },
-    {
-      name: "electron",
-      level: 25
-    },
-    {
-      name: "oracle",
-      level: 50
-    },
-    {
-      name: "mysql",
-      level: 90
-    },
-    {
-      name: "mongodb",
-      level: 25
-    }
-  ];
+  
+  project = this.projects[0];
+  project1 = this.projects[1];
+  project2 = this.projects[2];
 
  
-  checkTech(skill) {
-    if (skill == "technical") {
-      return true;
-    }
-
-    return false;
-  }
-
-  displaySkills() {
-    for (let i = 0; i < this.technicalSkills1.length; i++) {
-      this.getSkills(
-        this.technicalSkills1[i].name,
-        this.technicalSkills1[i].level
-      );
-      this.getSkills(
-        this.technicalSkills2[i].name,
-        this.technicalSkills2[i].level
-      );
-    }
-  }
-
-  getSkills(id, level) {
-    let bar = document.getElementById(id);
-    let width = 0;
-
-    let interval = setInterval(() => {
-      if (width == level - 1) {
-        clearInterval(interval);
-      }
-
-      width += 1;
-      bar.style.width = width + "%";
-    }, 5);
-  }
-
-  showSkills(skill) {
-    let button = document.getElementById(skill);
-
-    if (skill != this.skills) {
-      document.getElementById(this.skills).classList.remove(this.className);
-      this.skills = skill;
-      document.getElementById(skill).classList.add(this.className);
-    }
-  }
 }
 
 

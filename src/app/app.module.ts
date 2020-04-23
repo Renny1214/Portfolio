@@ -11,6 +11,7 @@ import { WorkComponent } from './work/work.component';
 import { IntroComponent } from './intro/intro.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     WorkComponent,
     IntroComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollBarComponent
   ],
   imports: [
     BrowserModule,
