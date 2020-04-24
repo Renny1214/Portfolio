@@ -1,104 +1,105 @@
-.back
-{
-  background-image: linear-gradient(-70deg,#0f4c75 30%, rgba(0, 0, 0, 0) 30%), url('https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+.back {
+  background-image: linear-gradient(-70deg, #0f4c75 30%, rgba(0, 0, 0, 0) 30%),
+    url("https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
-a, a > span {
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-    line-height: 24px;
-  }
-  a:before, a:after, a > span:before, a > span:after {
-    content: '';
-    position: absolute;
-    transition: transform .5s ease;
-  }
+a,
+a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+a:before,
+a:after,
+a > span:before,
+a > span:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
 
 .effect-1 {
-    padding-top: 10px;
-  }
-  .effect-1:before {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #52de97;
-    transform: scaleX(0);
-  }
-  .effect-1:hover:before {
-    transform: scaleX(1);
-  }
-  .what
-  {
-      color:#52de97;
-      font-size: 280px;
-        height: 700px;      
-  }
+  padding-top: 10px;
+}
+.effect-1:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #52de97;
+  transform: scaleX(0);
+}
+.effect-1:hover:before {
+  transform: scaleX(1);
+}
+.what {
+  color: #52de97;
+  font-size: 18rem;
+}
 
-  .arrow{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.arrow span{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
 }
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
 }
 @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
-.bottom
-{
-    margin-top: 250px;
+.bottom {
+  margin-top: 250px;
 }
 
-.background{
+.background {
   background: -webkit-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
   background: -o-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
   background: -moz-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
   background: linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
 }
-.desc{
-  font-size: 18px;
+.desc {
+  font-size: 1rem;
+  width: 100%;
 }
 
 .header,
 .intro-image {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
-.title
-{
-  font-size: 45px;
-  color:#52de97;
+.title {
+  font-size: 2rem;
+  color: #52de97;
 }
-
 
 .about-me {
   height: 80vh;
@@ -112,7 +113,7 @@ a, a > span {
   background-size: cover;
 }
 .about-me-text {
-  height: 80vh;
+  height: 100vh;
 }
 
 .skills-parallex {
@@ -123,9 +124,8 @@ a, a > span {
   background-position: center;
   background-repeat: no-repeat;
 }
-.skills {
-  height: 80vh;
-  background: var(--light-primary);
+.orange{
+  height: 100vh;
 }
 
 .skills-parallex1 {
@@ -164,7 +164,6 @@ a, a > span {
   background-size: cover;
 }
 
-
 .contact-parallex {
   background-image: url("../../assets/images/IMG_1316.JPG");
   height: 100%;
@@ -177,49 +176,7 @@ a, a > span {
   background: var(--light-primary);
   height: 80vh;
 }
-
-@media screen and (max-width: 1360px) {
-  .custom-pos {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    z-index: 2;
-  }
-  .about-me,
-  .skills,
-  .contact {
-    height: 100%;
-  }
-  .about-me-parallex,
-  .contact-parallex {
-    display: none;
-  }
-  .projects-page {
-    height: 100%;
-    background: linear-gradient(
-        -70deg,
-        var(--hacking-green) 30%,
-        rgba(0, 0, 0, 0) 30%
-      ),
-      var(--black-coding-url);
-  }
- 
-  .outer-bar {
-    height: 2vh;
-    width: 30vh;
-  }
-  .card-size {
-    height: 450px;
-    width: 100%;
-  }
-  .bowlby {
-    font-family: var(--bowlby);
-    font-size: 3rem;
-    color: white;
-  }
-}
-.last
-{
+.last {
   font-size: 50px;
   color: #0f4c75;
 }
@@ -238,7 +195,7 @@ a.button {
   color: #0f4c75;
   cursor: pointer;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -280,14 +237,14 @@ a.button font {
 }
 a.button:hover {
   -webkit-transform: translateZ(0) translateX(0.5em);
-          transform: translateZ(0) translateX(0.5em);
+  transform: translateZ(0) translateX(0.5em);
 }
 a.button:hover svg g circle {
   stroke-dashoffset: 200;
 }
 
-.con{
-color: #52de97;
+.con {
+  color: #52de97;
 }
 
 .bg-purple {
@@ -321,11 +278,9 @@ color: #52de97;
   }
 }
 
-@media screen and (max-width: 1360px) {
-  .pc {
-    display: none;
-  }
-  .mob {
-    display: block;
+@media screen and (max-width: 700px) {
+  .what {
+    color: #52de97;
+    font-size: 6rem;
   }
 }
