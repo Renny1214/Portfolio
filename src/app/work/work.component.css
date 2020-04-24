@@ -3,6 +3,7 @@
     url("https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 a,
@@ -37,9 +38,7 @@ a > span:after {
 }
 .what {
   color: #52de97;
-  font-size: 280px;
-  height: 700px;
-  font-family: "Nanum Myeongjo", serif;
+  font-size: 18rem;
 }
 
 .arrow {
@@ -88,16 +87,17 @@ a > span:after {
   background: linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
 }
 .desc {
-  font-size: 18px;
+  font-size: 1rem;
+  width: 100%;
 }
 
 .header,
 .intro-image {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
 .title {
-  font-size: 45px;
+  font-size: 2rem;
   color: #52de97;
 }
 
@@ -113,7 +113,7 @@ a > span:after {
   background-size: cover;
 }
 .about-me-text {
-  height: 80vh;
+  height: 100vh;
 }
 
 .skills-parallex {
@@ -124,9 +124,8 @@ a > span:after {
   background-position: center;
   background-repeat: no-repeat;
 }
-.skills {
-  height: 80vh;
-  background: var(--light-primary);
+.orange{
+  height: 100vh;
 }
 
 .skills-parallex1 {
@@ -176,47 +175,6 @@ a > span:after {
 .contact {
   background: var(--light-primary);
   height: 80vh;
-}
-
-@media screen and (max-width: 1360px) {
-  .custom-pos {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    z-index: 2;
-  }
-  .about-me,
-  .skills,
-  .contact {
-    height: 100%;
-  }
-  .about-me-parallex,
-  .contact-parallex {
-    display: none;
-  }
-  .projects-page {
-    height: 100%;
-    background: linear-gradient(
-        -70deg,
-        var(--hacking-green) 30%,
-        rgba(0, 0, 0, 0) 30%
-      ),
-      var(--black-coding-url);
-  }
-
-  .outer-bar {
-    height: 2vh;
-    width: 30vh;
-  }
-  .card-size {
-    height: 450px;
-    width: 100%;
-  }
-  .bowlby {
-    font-family: var(--bowlby);
-    font-size: 3rem;
-    color: white;
-  }
 }
 .last {
   font-size: 50px;
@@ -320,11 +278,9 @@ a.button:hover svg g circle {
   }
 }
 
-@media screen and (max-width: 1360px) {
-  .pc {
-    display: none;
-  }
-  .mob {
-    display: block;
+@media screen and (max-width: 700px) {
+  .what {
+    color: #52de97;
+    font-size: 6rem;
   }
 }

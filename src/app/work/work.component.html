@@ -70,25 +70,26 @@
   </div>
 </diV>
 
-<div class="container-fluid header position-relative background">
+<div class="container-fluid header background">
   <div
-    class="title d-flex justify-content-center  font-weight-bold pt-5"
+    class="title text-center font-weight-bold pt-5"
     data-aos="fade-up"
     data-aos-easing="linear"
   >
     {{ project.title }}
   </div>
   <div
-    class="d-flex justify-content-center mt-2 text-light"
+    class="text-center mt-2 text-light"
     data-aos="fade-up"
     data-aos-easing="linear"
   >
     {{ project.subHeading }}
   </div>
+
   <div class="row">
     <div class="col-sm-3"></div>
     <div
-      class="mt-5 col-sm-6 text-light desc"
+      class="mt-5 col-sm-6 text-light desc text-center"
       data-aos="fade-up"
       data-aos-easing="linear"
     >
@@ -106,16 +107,16 @@
   <div class="row">
     <div class="col-sm-4"></div>
     <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
-      <a
-        href="#"
-        class="d-flex justify-content-center pt-2 text-light effect-1"
-        >{{ project.link1 }}</a
-      >
-      <a
-        href="#"
-        class="d-flex justify-content-center pt-1 text-light effect-1"
-        >{{ project.link2 }}</a
-      >
+      <div class="mb-3 pl-2 pr-2">
+        <a href="#" class="text-center pt-2 text-light effect-1 mb-3">{{
+          project.link1
+        }}</a>
+      </div>
+      <div class="pl-2 pr-2">
+        <a href="#" class="text-center pt-1 text-light effect-1">{{
+          project.link2
+        }}</a>
+      </div>
     </div>
     <div class="col-sm-4"></div>
   </div>
@@ -123,17 +124,17 @@
 
 <div class="container-fluid about-me">
   <div class="about-me-parallex"></div>
-  <div class="container-fluid about-me-text" id="aboutTitle">
-    <div class="container-fluid header background">
+  <div class="container-fluid about-me-text background" id="aboutTitle">
+    <div class="container-fluid header">
       <div
-        class="title d-flex justify-content-center font-weight-bold pt-5"
+        class="title text-center font-weight-bold pt-5"
         data-aos="fade-up"
         data-aos-easing="linear"
       >
         {{ project1.title }}
       </div>
       <div
-        class="d-flex justify-content-center mt-2 text-light"
+        class="text-center mt-2 text-light"
         data-aos="fade-up"
         data-aos-easing="linear"
       >
@@ -142,7 +143,7 @@
       <div class="row">
         <div class="col-sm-3"></div>
         <div
-          class="mt-5 col-sm-6 text-light desc"
+          class="mt-5 col-sm-6 text-light desc text-center"
           data-aos="fade-up"
           data-aos-easing="linear"
         >
@@ -160,16 +161,20 @@
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
-          <a
-            href="#"
-            class="d-flex justify-content-center pt-2 text-light effect-1"
-            >{{ project1.link1 }}</a
-          >
-          <a
-            href="#"
-            class="d-flex justify-content-center pt-1 text-light effect-1"
-            >{{ project1.link2 }}</a
-          >
+          <div class="pl-2 pr-2">
+            <a
+              href="#"
+              class="d-flex justify-content-center pt-2 text-light effect-1"
+              >{{ project1.link1 }}</a
+            >
+          </div>
+          <div class="pl-2 pr-2">
+            <a
+              href="#"
+              class="d-flex justify-content-center pt-1 text-light effect-1"
+              >{{ project1.link2 }}</a
+            >
+          </div>
         </div>
         <div class="col-sm-4"></div>
       </div>
@@ -177,17 +182,17 @@
   </div>
 
   <div class="skills-parallex"></div>
-  <div class="container-fluid skills" id="skillsId">
-    <div class="container-fluid header  background">
+  <div class="container-fluid orange background" id="skillsId">
+    <div class="container-fluid header background">
       <div
-        class="title d-flex justify-content-center pt-5 font-weight-bold"
+        class="title text-center pt-5 font-weight-bold"
         data-aos="fade-up"
         data-aos-easing="linear"
       >
         {{ project2.title }}
       </div>
       <div
-        class="d-flex justify-content-center mt-2 text-light"
+        class="text-center mt-2 text-light"
         data-aos="fade-up"
         data-aos-easing="linear"
       >
@@ -196,11 +201,7 @@
       <div class="row">
         <div class="col-sm-3"></div>
         <div
-          class="pt-5 col-sm-6 text-light desc"
           data-aos="fade-up"
-          data-aos-easing="linear"
-        >
-          {{ project2.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
@@ -214,33 +215,37 @@
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
-          <a
-            href="#"
-            class="d-flex justify-content-center pt-2 text-light effect-1"
-            >{{ project2.link1 }}</a
-          >
-          <a
-            href="#"
-            class="d-flex justify-content-center pt-1 text-light effect-1"
-            >{{ project2.link2 }}</a
-          >
+          <div class="pl-2 pr-2">
+            <a
+              href="#"
+              class="d-flex justify-content-center pt-2 text-light effect-1"
+              >{{ project2.link1 }}</a
+            >
+          </div>
+          <div class="pl-2 pr-2">
+            <a
+              href="#"
+              class="d-flex justify-content-center pt-1 text-light effect-1"
+              >{{ project2.link2 }}</a
+            >
+          </div>
         </div>
         <div class="col-sm-4"></div>
       </div>
     </div>
   </div>
   <div class="skills-parallex1"></div>
-  <div class="container-fluid skills1" id="skillsId">
-    <div class="container-fluid header  background">
+  <div class="container-fluid orange background" id="skillsId">
+    <div class="container-fluid header background">
       <div
-        class="title d-flex justify-content-center pt-5 font-weight-bold"
+        class="title text-center pt-5 font-weight-bold"
         data-aos="fade-up"
         data-aos-easing="linear"
       >
         {{ project2.title }}
       </div>
       <div
-        class="d-flex justify-content-center mt-2 text-light"
+        class="text-center mt-2 text-light"
         data-aos="fade-up"
         data-aos-easing="linear"
       >
@@ -249,7 +254,7 @@
       <div class="row">
         <div class="col-sm-3"></div>
         <div
-          class="pt-5 col-sm-6 text-light desc"
+          class="pt-5 col-sm-6 text-light desc text-center"
           data-aos="fade-up"
           data-aos-easing="linear"
         >
@@ -267,16 +272,20 @@
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
-          <a
-            href="#"
-            class="d-flex justify-content-center pt-2 text-light effect-1"
-            >{{ project2.link1 }}</a
-          >
-          <a
-            href="#"
-            class="d-flex justify-content-center pt-1 text-light effect-1"
-            >{{ project2.link2 }}</a
-          >
+          <div class="pl-2 pr-2">
+            <a
+              href="#"
+              class="d-flex justify-content-center pt-2 text-light effect-1"
+              >{{ project2.link1 }}</a
+            >
+          </div>
+          <div class="pl-2 pr-2">
+            <a
+              href="#"
+              class="d-flex justify-content-center pt-1 text-light effect-1"
+              >{{ project2.link2 }}</a
+            >
+          </div>
         </div>
         <div class="col-sm-4"></div>
       </div>
