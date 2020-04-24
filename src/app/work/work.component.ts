@@ -18,7 +18,7 @@ export class WorkComponent implements OnInit {
 
   projects = [
     {
-      title: "GeekyStore",
+      title: "Little Oak",
       subHeading: "An Ecommerce Website",
       desc:
         "It is a complete dynamic website I made when I was in my early days,I was learning Angular and Springboot back then, This website is a skeletal frame for a full fledge website and have features like secure login, signup, products previews, category and price filters, search functionality to search your favorite product, cart, order history, ability to distinguish between the administrator and buyer giving adminstrator right to edit and add his products. User can change their data too if entered wrong. Technologies used were Angular7, Springboot, MySQL. This project lit a spark inside me and from here initialited my love for webapps.",
@@ -26,7 +26,7 @@ export class WorkComponent implements OnInit {
        link2 : "https://github.com/rishabh091/Ecommerce-website-backend"
     },
     {
-      title: "SkyLine",
+      title: "Scholar",
       subHeading: "A Blog website",
       desc:
         "A complete dynamic website I made after the Geekystore webapp. This webapp made me learn both frontend design and important backend features like email verification system. The website is completey made by using Angular 8, Springboot and MySQL and have features like login, signup, an otp verification system for enter mail during signup, home page where new trending blogs will pop up, blog creation, user followers and following system, blogs of users whom you followed will be also displayed on homepage as well as in their profile. Abiliy to make blogs private so their only your followers can see your blogs, blog editing, user detail editing, custom categories, ability to like and comment blogs.",

@@ -79,10 +79,10 @@ a, a > span {
 }
 
 .background{
-  background: -webkit-linear-gradient(30deg, #216353 40%, #0f4c75 40%);
-  background: -o-linear-gradient(30deg, #216353 40%, #0f4c75 40%);
-  background: -moz-linear-gradient(30deg, #216353 40%, #0f4c75 40%);
-  background: linear-gradient(30deg, #216353 40%, #0f4c75 40%);
+  background: -webkit-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
+  background: -o-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
+  background: -moz-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
+  background: linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
 }
 .desc{
   font-size: 18px;
@@ -90,7 +90,7 @@ a, a > span {
 
 .header,
 .intro-image {
-  height: 90vh;
+  height: 80vh;
   width: 100%;
 }
 .title
@@ -125,6 +125,32 @@ a, a > span {
 }
 .skills {
   height: 80vh;
+  background: var(--light-primary);
+}
+
+.skills-parallex1 {
+  background-image: url("../../assets/images/IMG_1206.JPG");
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills1 {
+  height: 80vh;
+  background: var(--light-primary);
+}
+
+.skills-parallex2 {
+  background-image: url("../../assets/images/IMG_1206.JPG");
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills2 {
+  height: 10vh;
   background: var(--light-primary);
 }
 .projects-page {
@@ -190,5 +216,116 @@ a, a > span {
     font-family: var(--bowlby);
     font-size: 3rem;
     color: white;
+  }
+}
+.last
+{
+  font-size: 50px;
+  color: #0f4c75;
+}
+
+a.button {
+  position: relative;
+  display: inline-block;
+  width: 25.6em;
+  height: 6.3em;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 1rem;
+  color: #0f4c75;
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+a.button svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.button svg g line,
+a.button svg g polyline,
+a.button svg g circle {
+  fill: none;
+  stroke: #0f4c75;
+}
+a.button svg g line,
+a.button svg g polyline {
+  stroke-miterlimit: 10;
+}
+a.button svg g circle {
+  display: block;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.066em;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset ease-out 0.5s;
+  transition: stroke-dashoffset ease-out 0.5s;
+}
+a.button font {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+}
+a.button:hover {
+  -webkit-transform: translateZ(0) translateX(0.5em);
+          transform: translateZ(0) translateX(0.5em);
+}
+a.button:hover svg g circle {
+  stroke-dashoffset: 200;
+}
+
+.con{
+color: #52de97;
+}
+
+.bg-purple {
+  background: linear-gradient(110deg, #522d5b 20%, purple 20%);
+}
+.bg-primary-light {
+  background: white;
+}
+.back-icon:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.icon {
+  height: 50px;
+  width: 50px;
+  opacity: 0.8;
+}
+.icon:hover {
+  opacity: 1;
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .pc {
+    display: none;
+  }
+  .mob {
+    display: block;
   }
 }
