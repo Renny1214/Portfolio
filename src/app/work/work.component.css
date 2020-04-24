@@ -1,90 +1,93 @@
-.back
-{
-  background-image: linear-gradient(-70deg,#0f4c75 30%, rgba(0, 0, 0, 0) 30%), url('https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+.back {
+  background-image: linear-gradient(-70deg, #0f4c75 30%, rgba(0, 0, 0, 0) 30%),
+    url("https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-a, a > span {
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-    line-height: 24px;
-  }
-  a:before, a:after, a > span:before, a > span:after {
-    content: '';
-    position: absolute;
-    transition: transform .5s ease;
-  }
+a,
+a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+a:before,
+a:after,
+a > span:before,
+a > span:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
 
 .effect-1 {
-    padding-top: 10px;
-  }
-  .effect-1:before {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #52de97;
-    transform: scaleX(0);
-  }
-  .effect-1:hover:before {
-    transform: scaleX(1);
-  }
-  .what
-  {
-      color:#52de97;
-      font-size: 280px;
-        height: 700px;      
-  }
+  padding-top: 10px;
+}
+.effect-1:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #52de97;
+  transform: scaleX(0);
+}
+.effect-1:hover:before {
+  transform: scaleX(1);
+}
+.what {
+  color: #52de97;
+  font-size: 280px;
+  height: 700px;
+  font-family: "Nanum Myeongjo", serif;
+}
 
-  .arrow{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.arrow span{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
-.arrow span:nth-child(2){
-    animation-delay: -0.2s;
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
 }
-.arrow span:nth-child(3){
-    animation-delay: -0.4s;
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
 }
 @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
-.bottom
-{
-    margin-top: 250px;
+.bottom {
+  margin-top: 250px;
 }
 
-.background{
+.background {
   background: -webkit-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
   background: -o-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
   background: -moz-linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
   background: linear-gradient(30deg, #75b79e 40%, #0f4c75 40%);
 }
-.desc{
+.desc {
   font-size: 18px;
 }
 
@@ -93,12 +96,10 @@ a, a > span {
   height: 80vh;
   width: 100%;
 }
-.title
-{
+.title {
   font-size: 45px;
-  color:#52de97;
+  color: #52de97;
 }
-
 
 .about-me {
   height: 80vh;
@@ -164,7 +165,6 @@ a, a > span {
   background-size: cover;
 }
 
-
 .contact-parallex {
   background-image: url("../../assets/images/IMG_1316.JPG");
   height: 100%;
@@ -203,7 +203,7 @@ a, a > span {
       ),
       var(--black-coding-url);
   }
- 
+
   .outer-bar {
     height: 2vh;
     width: 30vh;
@@ -218,8 +218,7 @@ a, a > span {
     color: white;
   }
 }
-.last
-{
+.last {
   font-size: 50px;
   color: #0f4c75;
 }
@@ -238,7 +237,7 @@ a.button {
   color: #0f4c75;
   cursor: pointer;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -280,14 +279,14 @@ a.button font {
 }
 a.button:hover {
   -webkit-transform: translateZ(0) translateX(0.5em);
-          transform: translateZ(0) translateX(0.5em);
+  transform: translateZ(0) translateX(0.5em);
 }
 a.button:hover svg g circle {
   stroke-dashoffset: 200;
 }
 
-.con{
-color: #52de97;
+.con {
+  color: #52de97;
 }
 
 .bg-purple {

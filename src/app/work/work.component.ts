@@ -50,6 +50,8 @@ export class WorkComponent implements OnInit {
   project2 = this.projects[2];
 
  
+
+
 }
 
 

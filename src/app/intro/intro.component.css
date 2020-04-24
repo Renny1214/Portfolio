@@ -1,5 +1,4 @@
-*
-{
+* {
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -50,6 +49,7 @@ a > span:after {
   color: #ffd31d;
   font-size: 280px;
   height: 700px;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 .arrow {
@@ -121,8 +121,7 @@ a > span:after {
   text-decoration-color: var(--purple);
 }
 
-.imp
-{
+.imp {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -151,17 +150,15 @@ a > span:after {
   border-bottom: 6px solid var(--purple);
 }
 
-.start-one
-{
+.start-one {
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.start-two
-{
+.start-two {
   font-size: 50px;
   letter-spacing: 0.1rem;
   word-spacing: 0.3rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .name {
   position: absolute;
@@ -176,10 +173,9 @@ a > span:after {
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-.start-three
-{
+.start-three {
   font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .name2 {
   position: absolute;
@@ -188,10 +184,9 @@ a > span:after {
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-.start-four
-{
+.start-four {
   font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .name3 {
   position: absolute;
@@ -200,27 +195,28 @@ a > span:after {
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-.third-page
-{
+.third-page {
   height: 600px;
   color: #fff;
-  background: -webkit-linear-gradient(-130deg,#ffed4b 30%, rgba(0, 0, 0, 0) 30%), url('https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background: -webkit-linear-gradient(
+      -130deg,
+      #ffed4b 30%,
+      rgba(0, 0, 0, 0) 30%
+    ),
+    url("https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-size: cover;
   background-position: 50% 21%;
 }
-.about
-{
+.about {
   background-color: #204051;
   opacity: 0.6;
 }
-.about-me
-{
-  color:white;
+.about-me {
+  color: white;
   font-size: 24px;
 }
 
-.forth-page
-{
+.forth-page {
   background: -webkit-linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
   background: -o-linear-gradient(45deg, #ffed4b 5s 50%, #ffd31d 50%);
   background: -moz-linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
@@ -249,24 +245,21 @@ a > span:after {
   background-size: 100%;
 }
 
-.last
-{
+.last {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.last1
-{
+.last1 {
   position: absolute;
   top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.recent
-{
-  color : white;
+.recent {
+  color: white;
   font-size: 100px;
 }
 a.button {
@@ -283,7 +276,7 @@ a.button {
   color: #fff;
   cursor: pointer;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -325,17 +318,15 @@ a.button font {
 }
 a.button:hover {
   -webkit-transform: translateZ(0) translateX(0.5em);
-          transform: translateZ(0) translateX(0.5em);
+  transform: translateZ(0) translateX(0.5em);
 }
 a.button:hover svg g circle {
   stroke-dashoffset: 200;
 }
 
-.last2
-{
+.last2 {
   position: absolute;
   top: 70%;
   left: 60%;
   transform: translate(-50%, -50%);
 }
-

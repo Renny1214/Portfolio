@@ -14,6 +14,7 @@ export class IntroComponent implements OnInit {
     AOS.init({
     })
     } 
-    
+
+
    
 }
