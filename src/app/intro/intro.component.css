@@ -91,10 +91,10 @@ a > span:after {
 }
 
 .header {
-  background: -webkit-linear-gradient(133deg, #204051 70%, #ffd31d 60%);
-  background: -o-linear-gradient(133deg, #204051 70%, #ffd31d 60%);
-  background: -moz-linear-gradient(133deg, #204051 70%, #ffed4b 60%);
-  background: linear-gradient(133deg, #204051 70%, #ffed4b 60%);
+  background: -webkit-linear-gradient(140deg, #204051 70%, #ffd31d 60%);
+  background: -o-linear-gradient(140deg, #204051 70%, #ffd31d 60%);
+  background: -moz-linear-gradient(140deg, #204051 70%, #ffed4b 60%);
+  background: linear-gradient(140deg, #204051 70%, #ffed4b 60%);
   height: 100vh;
 }
 
@@ -190,6 +190,7 @@ a > span:after {
   background: -o-linear-gradient(45deg, #ffed4b 5s 50%, #ffd31d 50%);
   background: -moz-linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
   background: linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
+  
 }
 
 .forth-page {
@@ -197,14 +198,23 @@ a > span:after {
   width: 100%;
 }
 .background1 {
-  background-image: url("../../assets/images/IMG_1191.JPG");
-  background-repeat: no-repeat;
+  background-image: url("../../assets/images/c1.jpeg");
+  background-size:cover;
 }
 .background2 {
-  background-image: url("../../assets/images/myself.jpg");
+  background-image: url("../../assets/images/IMG_1208.JPG");
+  background-size:cover;
+
 }
 .background3 {
-  background-image: url("../../assets/images/myself.jpg");
+  background-image: url("../../assets/images/c2.jpeg");
+  background-size:cover;
+
+}
+.background4 {
+  background-image: url("../../assets/images/IMG_1191.JPG");
+  background-size:cover;
+
 }
 
 .size {

@@ -105,7 +105,7 @@ a > span:after {
   height: 80vh;
 }
 .about-me-parallex {
-  background-image: url("../../assets/images/IMG_1191.JPG");
+  background-image: url("../../assets/images/ecom.jpeg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -117,7 +117,7 @@ a > span:after {
 }
 
 .skills-parallex {
-  background-image: url("../../assets/images/IMG_1206.JPG");
+  background-image: url("../../assets/images/blog.jpeg");
   background-size: cover;
   height: 100%;
   background-attachment: fixed;
@@ -129,7 +129,7 @@ a > span:after {
 }
 
 .skills-parallex1 {
-  background-image: url("../../assets/images/IMG_1206.JPG");
+  background-image: url("../../assets/images/orange.jpeg");
   background-size: cover;
   height: 100%;
   background-attachment: fixed;
@@ -142,7 +142,7 @@ a > span:after {
 }
 
 .skills-parallex2 {
-  background-image: url("../../assets/images/IMG_1206.JPG");
+  background-image: url("../../assets/images/taxi.jpeg");
   background-size: cover;
   height: 100%;
   background-attachment: fixed;
@@ -170,7 +170,7 @@ a > span:after {
 }
 
 .contact-parallex {
-  background-image: url("../../assets/images/IMG_1316.JPG");
+  background-image: url("../../assets/images/certi.jpeg");
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
