@@ -93,7 +93,7 @@ a > span:after {
 
 .header,
 .intro-image {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 .title {
@@ -113,7 +113,7 @@ a > span:after {
   background-size: cover;
 }
 .about-me-text {
-  height: 100vh;
+  height: 80vh;
 }
 
 .skills-parallex {
@@ -125,7 +125,7 @@ a > span:after {
   background-repeat: no-repeat;
 }
 .orange {
-  height: 100vh;
+  height: 80vh;
 }
 
 .skills-parallex1 {
@@ -140,9 +140,7 @@ a > span:after {
   height: 80vh;
   background: var(--light-primary);
 }
-.title{
-  padding-top:80px;
-}
+
 .skills-parallex2 {
   background-image: url("../../assets/images/IMG_1206.JPG");
   background-size: cover;
@@ -154,6 +152,11 @@ a > span:after {
 .skills2 {
   height: 10vh;
   background: var(--light-primary);
+}
+.carousels
+{
+  display: none;
+  height:80vh;
 }
 .projects-page {
   height: 80vh;
@@ -285,6 +288,36 @@ a.button:hover svg g circle {
     color: #52de97;
     font-size: 6rem;
   }
+  .header,
+  .intro-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-me {
+    height: 100%;
+  }
+
+  .about-me-text {
+    height: 100%;
+  }
+  .orange {
+    height: 100%;
+  }
+
+  .skills1 {
+    height: 100%;
+    background: var(--light-primary);
+  }
+  .contact {
+    background: var(--light-primary);
+    height: 100%;
+  }
+  .carousels
+  {
+    display: block;
+    height: 50%;
+  }
 }
 
 .abc {
@@ -343,6 +376,34 @@ a.button:hover svg g circle {
   padding-top: 55px;
   letter-spacing: 0.1em;
 }
-.love{
+.love {
   word-spacing: 0.2em;
+}
+
+.background1 {
+  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/4/28fa6bec-dbd4-477c-9a1e-60cc635dcafe1570200272914-Lino-Perros_Desk_Banner.jpG");
+  background-repeat: no-repeat;
+}
+.background2 {
+  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/4/d27ef149-022c-47bf-a2aa-41bd140a72b81570202086547-was.jpG");
+  background-repeat: no-repeat;
+}
+.background3 {
+  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/4/17e3b8fd-34c6-42fa-a8de-05965f2297ad1570200272965-Crocs_Desk_Banner.jpG");
+  background-repeat: no-repeat;
+}
+.background4 {
+  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/5/4aa5eead-db51-4382-a732-81538f52e3091570292996996-Mia_Desk_banner.jpg");
+  background-repeat: no-repeat;
+}
+.size {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  height: 400px;
+  background-size: 100%;
+}
+.undefined {
+  padding-top: 0px;
+  padding-left: 30px;
 }
