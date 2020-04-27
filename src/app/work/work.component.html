@@ -5,8 +5,7 @@
       data-aos="fade-down"
       data-aos-duration="2000"
       data-aos-easing="linear"
-      href="#"
-      >WORK</a
+      ></a
     >
 
     <ul class="navbar-nav">
@@ -47,15 +46,50 @@
       data-aos="fade-down"
       data-aos-duration="2000"
       data-aos-easing="linear"
-      href="/contact"
+      data-toggle="modal"
+      data-target="#myModal"
       >CONTACT</a
     >
   </nav>
-
-  <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+  
+  <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="abc">
+              <button type="button" class="close pr-4 pt-4" data-dismiss="modal">&times;</button>
+              <div class="container-fluid custom-pos">
+                  <div class="font-weight-bold text-dark">
+                    <div class="start-one text-center mb-5 mt-5" data-aos="fade-up">Contact me</div>
+                  </div>
+                  <div class="love start-one text-center mb-5 mt-5" data-aos="fade-up">
+                      Would love to hear from you!
+                    </div>
+                  </div>
+                  <div>
+                      <div class="text-center mail font-weight-bold mb-5"> <a href="rennymittal1214@gmail.com">rennymittal1214@gmail.com</a> </div>
+                      <div > 
+                        <div class=" text-center text-dark social">SOCIAL</div>
+                        <div class="container-fluid mt-4 d-flex justify-content-center">
+                            <a href="https://www.instagram.com/renny.mittal/" target="_blank">
+                              <img src="../../assets/images/instagram.png" class="img-fluid icon-size" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/rishabh-malhotra-639678176/" target="_blank">
+                              <img src="../../assets/images/linkedin.png" class="img-fluid icon-size ml-2 mr-2" />
+                            </a>
+                            <a href="https://github.com/renny1214" target="_blank">
+                              <img src="../../assets/images/github.png" class="img-fluid icon-size" />
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
-      class="d-flex justify-content-center what font-weight-bold ml-5 mr-5 mt-5 "
-    >
+    class="d-flex justify-content-center what font-weight-bold mt-5 mr-5 ml-5 position-relative"
+  >
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
       Work.
     </div>
   </div>
@@ -72,7 +106,7 @@
 
 <div class="container-fluid header background">
   <div
-    class="title text-center font-weight-bold pt-5"
+    class="title text-center font-weight-bold "
     data-aos="fade-up"
     data-aos-easing="linear"
   >
@@ -201,7 +235,11 @@
       <div class="row">
         <div class="col-sm-3"></div>
         <div
+          class="mt-5 col-sm-6 text-light desc text-center"
           data-aos="fade-up"
+          data-aos-easing="linear"
+        >
+          {{ project1.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
@@ -234,6 +272,7 @@
       </div>
     </div>
   </div>
+  
   <div class="skills-parallex1"></div>
   <div class="container-fluid orange background" id="skillsId">
     <div class="container-fluid header background">
@@ -313,4 +352,8 @@
     </div>
   </div>
 </div>
+<app-footer></app-footer>
+
 <app-scroll-bar></app-scroll-bar>
+
+

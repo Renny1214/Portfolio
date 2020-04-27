@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { WhatComponent } from './what/what.component';
 import { WorkComponent } from './work/work.component';
 import { IntroComponent } from './intro/intro.component';
-import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
 
@@ -19,7 +18,6 @@ import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
     WhatComponent,
     WorkComponent,
     IntroComponent,
-    ContactComponent,
     FooterComponent,
     ScrollBarComponent
   ],

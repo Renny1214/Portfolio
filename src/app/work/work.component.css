@@ -124,7 +124,7 @@ a > span:after {
   background-position: center;
   background-repeat: no-repeat;
 }
-.orange{
+.orange {
   height: 100vh;
 }
 
@@ -140,7 +140,9 @@ a > span:after {
   height: 80vh;
   background: var(--light-primary);
 }
-
+.title{
+  padding-top:80px;
+}
 .skills-parallex2 {
   background-image: url("../../assets/images/IMG_1206.JPG");
   background-size: cover;
@@ -283,4 +285,64 @@ a.button:hover svg g circle {
     color: #52de97;
     font-size: 6rem;
   }
+}
+
+.abc {
+  background: -webkit-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: -o-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: -moz-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  height: 80vh;
+  width: 100%;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+}
+.contact-text {
+  font-size: 24px;
+}
+.mail {
+  font-size: 55px;
+  color: black;
+}
+.mail:hover {
+  color: #3b6978;
+  text-decoration: underline;
+}
+.icon-size {
+  height: 50px;
+  width: 50px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.icon-size:hover {
+  opacity: 1;
+}
+.center-align {
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .icon-size {
+    display: none;
+  }
+}
+.start-one {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+.custom-pos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.social {
+  padding-top: 55px;
+  letter-spacing: 0.1em;
+}
+.love{
+  word-spacing: 0.2em;
 }

@@ -14,4 +14,6 @@ export class WhatComponent implements OnInit {
     AOS.init({
     })
   }
+
+  
 }

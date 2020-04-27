@@ -12,7 +12,7 @@
     -moz-radial-gradient(farthest-corner at 0% 0%, #3b6978 70%, #84a9ac 70%);
   background: linear-gradient(110deg, #204051 40%, rgba(0, 0, 0, 0) 30%),
     radial-gradient(farthest-corner at 0% 0%, #3b6978 70%, #84a9ac 70%);
-    height: 100vh;
+  height: 100vh;
 }
 
 a,
@@ -138,7 +138,7 @@ a > span:after {
   border-bottom: 6px solid var(--purple);
 }
 
-.custom-pos{
+.custom-pos {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -146,30 +146,25 @@ a > span:after {
   align-items: center;
 }
 
-.start-one
-{
+.start-one {
   font-size: 1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.start-two
-{
+.start-two {
   font-size: 3rem;
   letter-spacing: 0.1rem;
   word-spacing: 0.3rem;
   font-family: "Raleway", sans-serif;
 }
-.start-three
-{
+.start-three {
   font-size: 1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.start-four
-{
+.start-four {
   font-size: 1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.third-page
-{
+.third-page {
   color: #fff;
   background: -webkit-linear-gradient(
       -130deg,
@@ -305,10 +300,76 @@ a.button:hover svg g circle {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   .intro {
     color: #ffd31d;
     font-size: 6rem;
   }
 }
 
+.abc {
+  background: -webkit-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: -o-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: -moz-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  height: 80vh;
+  width: 100%;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+}
+.contact-text {
+  font-size: 24px;
+}
+.mail {
+  font-size: 55px;
+  color: black;
+}
+.mail:hover {
+  color: #3b6978;
+  text-decoration: underline;
+}
+.icon-size {
+  height: 50px;
+  width: 50px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.icon-size:hover {
+  opacity: 1;
+}
+.center-align {
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .icon-size {
+    display: none;
+  }
+}
+.social {
+  padding-top: 55px;
+  letter-spacing: 0.1em;
+}
+
+.love {
+  word-spacing: 0.2em;
+}
+.overlay {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left:0;
+  right:200px;
+  height: 10%;
+  width:10%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #84a9ac;
+
+}
+.container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
