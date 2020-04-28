@@ -314,7 +314,7 @@ a.button:hover svg g circle {
   }
   .carousels {
     display: block;
-    height: 50%;
+    height: 20vh;
   }
 }
 
