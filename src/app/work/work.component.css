@@ -1,6 +1,6 @@
 .back {
   background-image: linear-gradient(-70deg, #0f4c75 30%, rgba(0, 0, 0, 0) 30%),
-    url("https://images.pexels.com/photos/221011/pexels-photo-221011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    url("../../assets/images/work.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -129,7 +129,7 @@ a > span:after {
 }
 
 .skills-parallex1 {
-  background-image: url("../../assets/images/orange.jpeg");
+  background-image: url("../../assets/images/orange1.jpeg");
   background-size: cover;
   height: 100%;
   background-attachment: fixed;
@@ -153,10 +153,9 @@ a > span:after {
   height: 10vh;
   background: var(--light-primary);
 }
-.carousels
-{
+.carousels {
   display: none;
-  height:80vh;
+  height: 80vh;
 }
 .projects-page {
   height: 80vh;
@@ -170,7 +169,7 @@ a > span:after {
 }
 
 .contact-parallex {
-  background-image: url("../../assets/images/certi.jpeg");
+  background-image: url("../../assets/images/blog2.jpeg");
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -313,8 +312,7 @@ a.button:hover svg g circle {
     background: var(--light-primary);
     height: 100%;
   }
-  .carousels
-  {
+  .carousels {
     display: block;
     height: 50%;
   }
@@ -381,19 +379,19 @@ a.button:hover svg g circle {
 }
 
 .background1 {
-  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/4/28fa6bec-dbd4-477c-9a1e-60cc635dcafe1570200272914-Lino-Perros_Desk_Banner.jpG");
+  background-image: url("../../assets/images/blog2.jpeg");
   background-repeat: no-repeat;
 }
 .background2 {
-  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/4/d27ef149-022c-47bf-a2aa-41bd140a72b81570202086547-was.jpG");
+  background-image: url("../../assets/images/ecom2.jpeg");
   background-repeat: no-repeat;
 }
 .background3 {
-  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/4/17e3b8fd-34c6-42fa-a8de-05965f2297ad1570200272965-Crocs_Desk_Banner.jpG");
+  background-image: url("../../assets/images/taxi1.jpeg");
   background-repeat: no-repeat;
 }
 .background4 {
-  background-image: url("https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/10/5/4aa5eead-db51-4382-a732-81538f52e3091570292996996-Mia_Desk_banner.jpg");
+  background-image: url("../../assets/images/orange1.jpeg");
   background-repeat: no-repeat;
 }
 .size {

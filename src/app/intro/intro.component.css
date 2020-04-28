@@ -171,7 +171,7 @@ a > span:after {
       #ffed4b 30%,
       rgba(0, 0, 0, 0) 30%
     ),
-    url("https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    url("../../assets/images/intro.webp");
   background-size: cover;
   background-position: 50% 21%;
   height: 100vh;
@@ -190,38 +190,11 @@ a > span:after {
   background: -o-linear-gradient(45deg, #ffed4b 5s 50%, #ffd31d 50%);
   background: -moz-linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
   background: linear-gradient(45deg, #ffed4b 50%, #ffd31d 50%);
-  
 }
 
 .forth-page {
   height: 100vh;
   width: 100%;
-}
-.background1 {
-  background-image: url("../../assets/images/c1.jpeg");
-  background-size:cover;
-}
-.background2 {
-  background-image: url("../../assets/images/IMG_1208.JPG");
-  background-size:cover;
-
-}
-.background3 {
-  background-image: url("../../assets/images/c2.jpeg");
-  background-size:cover;
-
-}
-.background4 {
-  background-image: url("../../assets/images/IMG_1191.JPG");
-  background-size:cover;
-
-}
-
-.size {
-  width: 100%;
-  overflow: hidden;
-  height: 400px;
-  background-size: 100%;
 }
 
 .last {
@@ -370,14 +343,13 @@ a.button:hover svg g circle {
   position: absolute;
   top: 100px;
   bottom: 0;
-  left:0;
-  right:200px;
+  left: 0;
+  right: 200px;
   height: 10%;
-  width:10%;
+  width: 10%;
   opacity: 0;
   transition: 0.5s ease;
   background-color: #84a9ac;
-
 }
 .container:hover .overlay {
   opacity: 1;

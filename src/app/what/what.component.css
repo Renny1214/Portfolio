@@ -505,7 +505,7 @@ figure {
 
 .traits {
   font-size: 20px;
-  color:#c53727;
+  color: #c53727;
   word-spacing: 0.2em;
 }
 
@@ -565,21 +565,18 @@ figure {
   color: #b3b3b3;
 }
 
-
 .dropcap {
   float: left;
   font-size: 4rem;
   color: #c53727;
   margin: -13px 7px -13px 0;
 }
-.other
-{
-  font-size:1.2rem;
+.other {
+  font-size: 1.2rem;
 }
 
-
 @media screen and (max-width: 750px) {
-  .cards{
+  .cards {
     display: flex;
     flex-direction: column;
     box-align: center;
