@@ -2,9 +2,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
-a{
-  cursor: pointer;
-}
+
 .back {
   color: #fff;
   background: -webkit-linear-gradient(110deg, #204051 40%, rgba(0, 0, 0, 0) 30%),
@@ -178,7 +176,7 @@ a > span:after {
     url("../../assets/images/intro.webp");
   background-size: cover;
   background-position: 50% 21%;
-  height: 100vh;
+  height: 90vh;
 }
 .about {
   background-color: #204051;
@@ -295,7 +293,7 @@ a.button:hover svg g circle {
   .third-page {
     color: #fff;
     background: -webkit-linear-gradient(
-        -130deg,
+        -150deg,
         #ffed4b 30%,
         rgba(0, 0, 0, 0) 30%
       ),
@@ -309,6 +307,13 @@ a.button:hover svg g circle {
     top: 80%;
     left: 70%;
     transform: translate(-50%, -50%);
+  }
+  .header {
+    background: -webkit-linear-gradient(137deg, #204051 70%, #ffd31d 60%);
+    background: -o-linear-gradient(137deg, #204051 70%, #ffd31d 60%);
+    background: -moz-linear-gradient(137deg, #204051 70%, #ffed4b 60%);
+    background: linear-gradient(137deg, #204051 70%, #ffed4b 60%);
+    height: 100vh;
   }
 }
 
@@ -330,6 +335,7 @@ a.button:hover svg g circle {
 .mail {
   font-size: 2rem;
   color: black;
+  padding-bottom: 30px;
 }
 .mail:hover {
   color: #3b6978;
@@ -355,10 +361,10 @@ a.button:hover svg g circle {
   .mail {
     font-size: 24px;
     color: black;
+    padding-bottom: 20px;
+
   }
   .social {
-    padding-top: 20px;
-    padding-bottom: 0px;
     letter-spacing: 0.1em;
   }
   .mail {
