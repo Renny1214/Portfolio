@@ -29,7 +29,7 @@ export class WorkComponent implements OnInit {
       title: "Scholar",
       subHeading: "A Blog website",
       desc:
-        "A complete dynamic website I made after the Geekystore webapp. This webapp made me learn both frontend design and important backend features like email verification system. The website is completey made by using Angular 8, Springboot and MySQL and have features like login, signup, an otp verification system for enter mail during signup, home page where new trending blogs will pop up, blog creation, user followers and following system, blogs of users whom you followed will be also displayed on homepage as well as in their profile. Abiliy to make blogs private so their only your followers can see your blogs, blog editing, user detail editing, custom categories, ability to like and comment blogs.",
+        "A complete dynamic website I made after the Geekystore webapp. This webapp made me learn both frontend design and important backend features like email verification system. The website is completely made by using Angular 7, Springboot and MySQL and have features like login, signup, an otp verification system for enter mail during signup, home page where new trending blogs will pop up, blog creation, user followers and following system, blogs of users whom you followed will be also displayed on homepage as well as in their profile. Abiliy to make blogs private so their only your followers can see your blogs, blog editing, user detail editing, custom categories, ability to like and comment blogs.",
       link1:
         "https://github.com/Renny1214/Blog-Website-frontend.git",
       link2:  "https://github.com/Renny1214/Blog-website-backend.git"
@@ -46,7 +46,7 @@ export class WorkComponent implements OnInit {
       title: "Taxi service",
       subHeading: "A taxi service website",
       desc:
-        "Someone rightly said 'Necessity is mother of invention', I am a huge music head I listen to music all day, it is such a sweet thing but the absence of a simple music player always bugged me so I created this offline music player that can play music present in my computer, having functionalities like playlist creation and song skips and previous songs. The design is quite simple because it was my first time creating a desktop application. Being a web developer I thought to use javascript in this webapp and used Angular 8 and Electron to convert it into .exe file. The electron made it possible to use this application on Mac as well as Linux. Thats the beauty of being a programmer right, We can create any technology we want.",
+        "This frontend website I made for a competition held at my college promises. This webapp made me learn a lot more about animations and frontend designing. This website is completely made by using Angualar 7 . It has basic webpages like safety , contact us , book a ride etc . This website takes the users input of his start and destination and calculate the distance between them using google map andbooks a cab or any other vehicle of their hoice. I won best content for this website.",
       link1: 
         "https://github.com/rishabh091/taxi-service.git"
     }

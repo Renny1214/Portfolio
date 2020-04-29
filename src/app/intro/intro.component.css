@@ -95,10 +95,10 @@ a > span:after {
 }
 
 .header {
-  background: -webkit-linear-gradient(140deg, #204051 70%, #ffd31d 60%);
-  background: -o-linear-gradient(140deg, #204051 70%, #ffd31d 60%);
-  background: -moz-linear-gradient(140deg, #204051 70%, #ffed4b 60%);
-  background: linear-gradient(140deg, #204051 70%, #ffed4b 60%);
+  background: -webkit-linear-gradient(134deg, #204051 70%, #ffd31d 60%);
+  background: -o-linear-gradient(134deg, #204051 70%, #ffd31d 60%);
+  background: -moz-linear-gradient(134deg, #204051 70%, #ffed4b 60%);
+  background: linear-gradient(134deg, #204051 70%, #ffed4b 60%);
   height: 100vh;
 }
 
@@ -178,7 +178,7 @@ a > span:after {
     url("../../assets/images/intro.webp");
   background-size: cover;
   background-position: 50% 21%;
-  height: 100vh;
+  height: 80vh;
 }
 .about {
   background-color: #204051;
@@ -348,6 +348,12 @@ a.button:hover svg g circle {
     padding-top: 20px;
     padding-bottom: 0px;
     letter-spacing: 0.1em;
+  }
+  .start-two {
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    font-family: "Raleway", sans-serif;
   }
 
 }
