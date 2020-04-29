@@ -178,7 +178,7 @@ a > span:after {
     url("../../assets/images/intro.webp");
   background-size: cover;
   background-position: 50% 21%;
-  height: 80vh;
+  height: 100vh;
 }
 .about {
   background-color: #204051;

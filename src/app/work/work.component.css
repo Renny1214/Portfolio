@@ -149,13 +149,8 @@ a > span:after {
   background-position: center;
   background-repeat: no-repeat;
 }
-.skills2 {
-  height: 10vh;
-  background: var(--light-primary);
-}
 .carousels {
   display: none;
-  height: 80vh;
 }
 .projects-page {
   height: 80vh;
@@ -314,7 +309,7 @@ a.button:hover svg g circle {
   }
   .carousels {
     display: block;
-    height: 40vh;
+    height: 20vh;
   }
   .skills2 {
     height: 100%;
