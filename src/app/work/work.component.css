@@ -314,7 +314,11 @@ a.button:hover svg g circle {
   }
   .carousels {
     display: block;
-    height: 20vh;
+    height: 40vh;
+  }
+  .skills2 {
+    height: 100%;
+    background: var(--light-primary);
   }
 }
 
@@ -357,6 +361,10 @@ a.button:hover svg g circle {
 @media screen and (max-width: 750px) {
   .icon-size {
     display: none;
+  }
+  .mail {
+    font-size: 1.5rem;
+    color: black;
   }
 }
 .start-one {

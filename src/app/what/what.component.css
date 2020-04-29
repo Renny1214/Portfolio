@@ -84,7 +84,6 @@ a > span:after {
   background: -moz-linear-gradient(110deg, #ffeecf 60%, #fad284 60%);
   background: linear-gradient(110deg, #ffeecf 60%, #fad284 60%);
   height: 80vh;
-  width: 100%;
 }
 
 .modal-content {
@@ -122,13 +121,16 @@ a > span:after {
     color: #ffc46b;
     font-size: 6rem;
   }
+  .mail {
+    font-size: 1.5rem;
+    color: black;
+  }
 }
 .start-one {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
 .custom-pos {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
