@@ -4,6 +4,9 @@
   background-size: cover;
   height: 100vh;
 }
+a{
+  cursor: pointer;
+}
 
 a,
 a > span {
@@ -114,9 +117,6 @@ a > span:after {
 }
 
 @media screen and (max-width: 750px) {
-  .icon-size {
-    display: none;
-  }
   .what {
     color: #ffc46b;
     font-size: 6rem;
@@ -448,6 +448,35 @@ figure {
   background-color: #f06f32;
 }
 
+.list-social1 li {
+  font-family: Arial, sans-serif;
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.list-social1 li:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.list-social1 li.fb:before {
+  background-color: #7b3c3c;
+}
+.list-social1 li.twt:before {
+  background-color: #c70039;
+}
+.list-social1 li.gp:before {
+  background-color: #c53727;
+}
+.list-social1 li.lkd:before {
+  background-color: #f06f32;
+}
+
 .cardcol {
   margin: 0 auto;
 }
@@ -520,6 +549,7 @@ figure {
   box-align: center;
   align-items: center;
   min-height: 100vh;
+  justify-content: center;
 }
 
 .card {
@@ -581,12 +611,32 @@ figure {
 }
 
 @media screen and (max-width: 750px) {
+  .card:first-child {
+    display: none;
+  }
+  .card2 {
+    min-width: 300px;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: -4px 4px 26px 2px rgba(26, 73, 77, 0.1);
+    background: linear-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#fafafa),
+      to(whitesmoke)
+    );
+    background: linear-gradient(to right bottom, #fafafa, whitesmoke);
+    position: relative;
+  }
   .cards {
     display: flex;
     flex-direction: column;
     box-align: center;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 80px;
     min-height: 100vh;
   }
   .card {
@@ -604,7 +654,35 @@ figure {
       to(whitesmoke)
     );
     background: linear-gradient(to right bottom, #fafafa, whitesmoke);
-    transition: none;
     position: relative;
   }
+  .contact-text {
+    font-size: 15px;
+  }
+  .mail {
+    font-size: 24px;
+    color: black;
+  }
+  .social {
+    padding-top: 20px;
+    letter-spacing: 0.1em;
+  }
+  .subtitle {
+    position: relative;
+    width: 510px;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    transform: none;
+  }
+
+  .card:hover + .card,
+  .card:focus-within + .card {
+    transform: none;
+  }
+}
+
+.card2 {
+  display: none;
 }

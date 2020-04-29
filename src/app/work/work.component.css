@@ -320,8 +320,11 @@ a.button:hover svg g circle {
     height: 100%;
     background: var(--light-primary);
   }
+  
 }
-
+a{
+  cursor: pointer;
+}
 .abc {
   background: -webkit-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
   background: -o-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
@@ -359,13 +362,45 @@ a.button:hover svg g circle {
 }
 
 @media screen and (max-width: 750px) {
-  .icon-size {
-    display: none;
+  .contact-text {
+    font-size: 15px;
+  }
+  .mail {
+    font-size: 24px;
+    color: black;
+  }
+  .social {
+    padding-top: 20px;
+    letter-spacing: 0.1em;
   }
   .mail {
     font-size: 1.5rem;
     color: black;
   }
+  .but{
+    margin-top:10rem;
+  }
+  .carousel-indicators{
+    margin-top:50px;
+  }
+  .carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #52de97;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: #0f4c75;
+}
+
 }
 .start-one {
   font-size: 1rem;

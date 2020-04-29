@@ -2,6 +2,9 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
+a{
+  cursor: pointer;
+}
 .back {
   color: #fff;
   background: -webkit-linear-gradient(110deg, #204051 40%, rgba(0, 0, 0, 0) 30%),
@@ -33,6 +36,7 @@ a > span:after {
 
 .effect-1 {
   padding-top: 10px;
+  cursor: pointer;
 }
 .effect-1:before {
   left: 0;
@@ -91,10 +95,10 @@ a > span:after {
 }
 
 .header {
-  background: -webkit-linear-gradient(140deg, #204051 70%, #ffd31d 60%);
-  background: -o-linear-gradient(140deg, #204051 70%, #ffd31d 60%);
-  background: -moz-linear-gradient(140deg, #204051 70%, #ffed4b 60%);
-  background: linear-gradient(140deg, #204051 70%, #ffed4b 60%);
+  background: -webkit-linear-gradient(134deg, #204051 70%, #ffd31d 60%);
+  background: -o-linear-gradient(134deg, #204051 70%, #ffd31d 60%);
+  background: -moz-linear-gradient(134deg, #204051 70%, #ffed4b 60%);
+  background: linear-gradient(134deg, #204051 70%, #ffed4b 60%);
   height: 100vh;
 }
 
@@ -174,7 +178,7 @@ a > span:after {
     url("../../assets/images/intro.webp");
   background-size: cover;
   background-position: 50% 21%;
-  height: 100vh;
+  height: 80vh;
 }
 .about {
   background-color: #204051;
@@ -283,7 +287,7 @@ a.button:hover svg g circle {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .intro {
     color: #ffd31d;
     font-size: 6rem;
@@ -299,6 +303,12 @@ a.button:hover svg g circle {
     background-size: cover;
     background-position: 50% 21%;
     height: 100%;
+  }
+  .last2 {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -339,14 +349,30 @@ a.button:hover svg g circle {
 }
 
 @media screen and (max-width: 750px) {
-  .icon-size {
-    display: none;
+  .contact-text {
+    font-size: 15px;
+  }
+  .mail {
+    font-size: 24px;
+    color: black;
+  }
+  .social {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    letter-spacing: 0.1em;
   }
   .mail {
     font-size: 1.5rem;
     color: black;
     word-break: normal;
   }
+  .start-two {
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    font-family: "Raleway", sans-serif;
+  }
+
 }
 .social {
   padding-top: 55px;
