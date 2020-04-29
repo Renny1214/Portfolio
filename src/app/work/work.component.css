@@ -149,13 +149,8 @@ a > span:after {
   background-position: center;
   background-repeat: no-repeat;
 }
-.skills2 {
-  height: 10vh;
-  background: var(--light-primary);
-}
 .carousels {
   display: none;
-  height: 80vh;
 }
 .projects-page {
   height: 80vh;
@@ -316,6 +311,10 @@ a.button:hover svg g circle {
     display: block;
     height: 20vh;
   }
+  .skills2 {
+    height: 100%;
+    background: var(--light-primary);
+  }
   
 }
 a{
@@ -368,6 +367,10 @@ a{
   .social {
     padding-top: 20px;
     letter-spacing: 0.1em;
+  }
+  .mail {
+    font-size: 1.5rem;
+    color: black;
   }
   .but{
     margin-top:10rem;

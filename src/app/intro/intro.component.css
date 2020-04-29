@@ -178,7 +178,7 @@ a > span:after {
     url("../../assets/images/intro.webp");
   background-size: cover;
   background-position: 50% 21%;
-  height: 80vh;
+  height: 100vh;
 }
 .about {
   background-color: #204051;
@@ -292,6 +292,18 @@ a.button:hover svg g circle {
     color: #ffd31d;
     font-size: 6rem;
   }
+  .third-page {
+    color: #fff;
+    background: -webkit-linear-gradient(
+        -130deg,
+        #ffed4b 30%,
+        rgba(0, 0, 0, 0) 30%
+      ),
+      url("../../assets/images/intro.webp");
+    background-size: cover;
+    background-position: 50% 21%;
+    height: 100%;
+  }
   .last2 {
     position: absolute;
     top: 80%;
@@ -316,7 +328,7 @@ a.button:hover svg g circle {
   font-size: 24px;
 }
 .mail {
-  font-size: 55px;
+  font-size: 2rem;
   color: black;
 }
 .mail:hover {
@@ -348,6 +360,11 @@ a.button:hover svg g circle {
     padding-top: 20px;
     padding-bottom: 0px;
     letter-spacing: 0.1em;
+  }
+  .mail {
+    font-size: 1.5rem;
+    color: black;
+    word-break: normal;
   }
   .start-two {
     font-size: 30px;
