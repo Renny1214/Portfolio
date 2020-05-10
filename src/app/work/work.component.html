@@ -1,252 +1,144 @@
 <diV class="pt-5 back ">
   <nav class="navbar navbar-expand-sm justify-content-between">
-    <a
-      class="nav-link text-light effect-1 font-weight-bold"
-      data-aos="fade-down"
-      data-aos-duration="2000"
-      data-aos-easing="linear"
-    ></a>
+    <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="2000"
+      data-aos-easing="linear"></a>
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a
-          class="nav-link text-light effect-1 font-weight-bold"
-          data-aos="fade-down"
-          data-aos-duration="1300"
-          data-aos-easing="linear"
-          href="/intro"
-          >WHO</a
-        >
+        <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="1300"
+          data-aos-easing="linear" href="/intro">WHO</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link text-light effect-1  font-weight-bold"
-          data-aos="fade-down"
-          data-aos-duration="2300"
-          data-aos-easing="linear"
-          href="/what"
-          >WHAT</a
-        >
+        <a class="nav-link text-light effect-1  font-weight-bold" data-aos="fade-down" data-aos-duration="2300"
+          data-aos-easing="linear" href="/what">WHAT</a>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link text-light effect-1 font-weight-bold"
-          data-aos="fade-down"
-          data-aos-duration="2800"
-          data-aos-easing="linear"
-          href="/work"
-          >WORK</a
-        >
+        <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="2800"
+          data-aos-easing="linear" href="/work">WORK</a>
       </li>
     </ul>
 
-    <a
-      class="nav-link text-light effect-1 font-weight-bold"
-      data-aos="fade-down"
-      data-aos-duration="2000"
-      data-aos-easing="linear"
-      data-toggle="modal"
-      data-target="#myModal"
-      >CONTACT</a
-    >
+    <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="2000"
+      data-aos-easing="linear" data-toggle="modal" data-target="#myModal">CONTACT</a>
   </nav>
 
-=
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="abc">
-        <button type="button" class="close pr-4 pt-4" data-dismiss="modal">
-          &times;
-        </button>
-        <div class="container-fluid custom-pos">
-          <div class="font-weight-bold text-dark">
-            <div class="start-one text-center mb-1 mt-5">
-              Contact me
+  =
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="abc">
+          <button type="button" class="close pr-4 pt-2" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="container-fluid custom-pos">
+            <div class="font-weight-bold text-dark">
+              <div class="start-one text-center mb-1">
+                Contact me
+              </div>
             </div>
-          </div>
-          <div
-            class="love start-one text-center mt-1 mb-1 text-dark"
-            data-aos="fade-up"
-          >
-            Would love to hear from you!
-          </div>
+            <div class="love start-one text-center mt-1 mb-1 text-dark" data-aos="fade-up">
+              Would love to hear from you!
+            </div>
 
-          <div class="text-info text-center">I am always open to new ideas and opportunities</div>
-        </div>
-        <div>
-          <div class="text-center">
-            <div class="justify-content-center d-flex text-dark">
-              <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-                <div class="row mt-5">
+            <div class="text-info text-center">I am always open to new ideas and opportunities</div>
+          </div>
+          <div>
+            <div class="text-center">
+              <div class="justify-content-center d-flex text-dark">
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                  <div class="row mt-5 p-2">
 
-                  <div class="col-sm-6">
-                    <div class="input-group a mb-4 ">
-                      <input
-                        type="text"
-                        formControlName="name"
-                        class="form-control"
-                        [ngClass]="{
+                    <div class="col-sm-6">
+                      <div class="input-group mb-2">
+                        <input type="text" formControlName="name" class="form-control" [ngClass]="{
                           'is-invalid': submitted && f.name.errors
-                        }"
-                        placeholder="name"
-                        [(ngModel)]="name"
-                      />
-                      <div
-                        *ngIf="submitted && f.name.errors"
-                        class="invalid-feedback"
-                      ></div>
+                        }" placeholder="name" [(ngModel)]="name" />
+                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback"></div>
+                      </div>
+
+                      <div class="input-group mb-2">
+                        <input type="text" formControlName="email" class="form-control" [ngClass]="{
+                          'is-invalid': submitted && f.email.errors
+                        }" placeholder="email" [(ngModel)]="email" />
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+
+                        </div>
+                      </div>
                     </div>
 
-                    <div class="input-group  a mb-3">
-                      <input
-                        type="text"
-                        formControlName="email"
-                        class="form-control"
-                        [ngClass]="{
-                          'is-invalid': submitted && f.email.errors
-                        }"
-                        placeholder="email"
-                        [(ngModel)]="email"
-                      />
-                      <div
-                        *ngIf="submitted && f.email.errors"
-                        class="invalid-feedback"
-                      >
-                        
+                    <div class="col-sm-6">
+                      <div class="input-group">
+                        <textarea formControlName="message" class="form-control textbox" [ngClass]="{
+                          'is-invalid': submitted && f.message.errors
+                        }" placeholder="message" [(ngModel)]="message"></textarea>
+                        <div *ngIf="submitted && f.message.errors" class="invalid-feedback"></div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-sm-6">
-                    <div class="input-group a">
-                      <textarea
-                        formControlName="message"
-                        class="form-control textbox"
-                        [ngClass]="{
-                          'is-invalid': submitted && f.message.errors
-                        }"
-                        placeholder="message"
-                        [(ngModel)]="message"
-                      ></textarea>
-                      <div
-                        *ngIf="submitted && f.message.errors"
-                        class="invalid-feedback"
-                      ></div>
-                    </div>
+                  <div class="p-2 mt-3">
+                    <button class="btn btn-sm rounded-0 btn4">Send</button>
                   </div>
-                </div>
-
-                <div class="form-group a pl-5 pr-5">
-                  <button class="btn btn-sm rounded-0 btn4">Send</button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
-          </div>
-          <div>
-            <div class=" text-center text-dark social">SOCIAL</div>
-            <div class="container-fluid mt-3 d-flex justify-content-center">
-              <a
-                href="https://www.instagram.com/renny.mittal/"
-                target="_blank"
-              >
-                <img
-                  src="../../assets/images/instagram.png"
-                  class="img-fluid icon-size"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/renny-mittal-97a84a1a0/"
-                target="_blank"
-              >
-                <img
-                  src="../../assets/images/linkedin.png"
-                  class="img-fluid icon-size ml-2 mr-2"
-                />
-              </a>
-              <a href="https://github.com/renny1214" target="_blank">
-                <img
-                  src="../../assets/images/github.png"
-                  class="img-fluid icon-size"
-                />
-              </a>
+            <div class="mt-2">
+              <div class="container-fluid d-flex justify-content-center">
+                <a href="https://www.instagram.com/renny.mittal/" target="_blank">
+                  <img src="../../assets/images/instagram.png" class="img-fluid icon-size" />
+                </a>
+                <a href="https://www.linkedin.com/in/renny-mittal-97a84a1a0/" target="_blank">
+                  <img src="../../assets/images/linkedin.png" class="img-fluid icon-size ml-2 mr-2" />
+                </a>
+                <a href="https://github.com/renny1214" target="_blank">
+                  <img src="../../assets/images/github.png" class="img-fluid icon-size" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-  <div
-    class="d-flex justify-content-center what font-weight-bold mt-5 mr-5 ml-5 position-relative"
-  >
+  <div class="d-flex justify-content-center what font-weight-bold mt-5 mr-5 ml-5 position-relative">
     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
       Work.
     </div>
   </div>
 
-  <div
-    data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="500"
-    class="arrow bottom"
-  >
+  <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="arrow bottom">
     <span></span>
   </div>
 </diV>
 
 <div class="container-fluid header background pb-4">
-  <div
-    class="title text-center font-weight-bold pt-5 "
-    data-aos="fade-up"
-    data-aos-easing="linear"
-  >
+  <div class="title text-center font-weight-bold pt-5 " data-aos="fade-up" data-aos-easing="linear">
     {{ project.title }}
   </div>
-  <div
-    class="text-center mt-2 text-light"
-    data-aos="fade-up"
-    data-aos-easing="linear"
-  >
+  <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
     {{ project.subHeading }}
   </div>
 
   <div class="row">
     <div class="col-sm-3"></div>
-    <div
-      class="mt-5 col-sm-6 text-light desc text-center"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-    >
+    <div class="mt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
       {{ project.desc }}
     </div>
     <div class="col-sm-3"></div>
   </div>
-  <div
-    class="text d-flex justify-content-around mt-3 text-light"
-    data-aos="fade-up"
-    data-aos-easing="linear"
-  >
+  <div class="text d-flex justify-content-around mt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
     Links:
   </div>
   <div class="row">
     <div class="col-sm-4"></div>
     <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
       <div class="mb-3 pl-2 pr-2 text-center">
-          <div>
-              <a
-                href="#"
-                class="d-flex justify-content-center pt-2 text-light effect-1"
-                >{{ project.link1 }}</a
-              >
-            </div>
-            <div>
-              <a
-                href="#"
-                class="d-flex justify-content-center pt-1 text-light effect-1"
-                >{{ project.link2 }}</a
-              >
-            </div>
+        <div>
+          <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project.link1 }}</a>
+        </div>
+        <div>
+          <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project.link2 }}</a>
+        </div>
       </div>
     </div>
     <div class="col-sm-4"></div>
@@ -257,54 +149,30 @@
   <div class="about-me-parallex"></div>
   <div class="container-fluid about-me-text background pb-4" id="aboutTitle">
     <div class="container-fluid header">
-      <div
-        class="title text-center font-weight-bold pt-5"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="title text-center font-weight-bold pt-5" data-aos="fade-up" data-aos-easing="linear">
         {{ project1.title }}
       </div>
-      <div
-        class="text-center mt-2 text-light"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
         {{ project1.subHeading }}
       </div>
       <div class="row">
         <div class="col-sm-3"></div>
-        <div
-          class="mt-5 col-sm-6 text-light desc text-center"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-        >
+        <div class="mt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
           {{ project1.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
-      <div
-        class="text d-flex justify-content-around mt-3 text-light"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="text d-flex justify-content-around mt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
         Links:
       </div>
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
           <div class="pl-2 pr-2 text-center">
-            <a
-              href="#"
-              class="d-flex justify-content-center pt-2 text-light effect-1"
-              >{{ project1.link1 }}</a
-            >
+            <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project1.link1 }}</a>
           </div>
           <div class="pl-2 pr-2 text-center">
-            <a
-              href="#"
-              class="d-flex justify-content-center pt-1 text-light effect-1"
-              >{{ project1.link2 }}</a
-            >
+            <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project1.link2 }}</a>
           </div>
         </div>
         <div class="col-sm-4"></div>
@@ -315,54 +183,30 @@
   <div class="skills-parallex"></div>
   <div class="container-fluid orange background pb-4" id="skillsId">
     <div class="container-fluid header background">
-      <div
-        class="title text-center pt-5 font-weight-bold"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="title text-center pt-5 font-weight-bold" data-aos="fade-up" data-aos-easing="linear">
         {{ project2.title }}
       </div>
-      <div
-        class="text-center mt-2 text-light"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
         {{ project2.subHeading }}
       </div>
       <div class="row">
         <div class="col-sm-3"></div>
-        <div
-          class="mt-5 col-sm-6 text-light desc text-center"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-        >
+        <div class="mt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
           {{ project2.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
-      <div
-        class="text d-flex justify-content-around pt-3 text-light"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="text d-flex justify-content-around pt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
         Links:
       </div>
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
           <div class="pl-2 pr-2 text-center">
-            <a
-              href="#"
-              class="d-flex justify-content-center pt-2 text-light effect-1"
-              >{{ project2.link1 }}</a
-            >
+            <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project2.link1 }}</a>
           </div>
           <div class="pl-2 pr-2 text-center">
-            <a
-              href="#"
-              class="d-flex justify-content-center pt-1 text-light effect-1"
-              >{{ project2.link2 }}</a
-            >
+            <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project2.link2 }}</a>
           </div>
         </div>
         <div class="col-sm-4"></div>
@@ -373,54 +217,30 @@
   <div class="skills-parallex1"></div>
   <div class="container-fluid orange background pb-4" id="skillsId">
     <div class="container-fluid header background">
-      <div
-        class="title text-center pt-5 font-weight-bold"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="title text-center pt-5 font-weight-bold" data-aos="fade-up" data-aos-easing="linear">
         {{ project3.title }}
       </div>
-      <div
-        class="text-center mt-2 text-light"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
         {{ project3.subHeading }}
       </div>
       <div class="row">
         <div class="col-sm-3"></div>
-        <div
-          class="pt-5 col-sm-6 text-light desc text-center"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-        >
+        <div class="pt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
           {{ project3.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
-      <div
-        class="text d-flex justify-content-around pt-3 text-light"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-      >
+      <div class="text d-flex justify-content-around pt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
         Links:
       </div>
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
           <div class="pl-2 pr-2 text-center">
-            <a
-              href="#"
-              class="d-flex justify-content-center pt-2 text-light effect-1"
-              >{{ project3.link1 }}</a
-            >
+            <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project3.link1 }}</a>
           </div>
           <div class="pl-2 pr-2 text-center">
-            <a
-              href="#"
-              class="d-flex justify-content-center pt-1 text-light effect-1"
-              >{{ project3.link2 }}</a
-            >
+            <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project3.link2 }}</a>
           </div>
         </div>
         <div class="col-sm-4"></div>
@@ -431,7 +251,7 @@
   <div class="skills-parallex2"></div>
   <div class="container-fluid">
     <div id="demo" class="carousels carousel slide" data-ride="carousel">
-        <p class="text-center p-5">Pictures of my project</p>
+      <p class="text-center p-5">Pictures of my project</p>
 
       <ol class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -440,7 +260,7 @@
         <li data-target="#demo" data-slide-to="3"></li>
 
       </ol>
-  
+
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="carousel-item background3 size active"></div>
@@ -448,7 +268,7 @@
         <div class="carousel-item background2 size"></div>
         <div class="carousel-item background4 size"></div>
       </div>
-  
+
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#demo" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -470,16 +290,8 @@
         something with you
       </p>
 
-      <a
-        href="https://github.com/renny1214"
-        target="_blank"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        ><img
-          src="../../assets/images/github.png"
-          class="icon img-fluid mt-3 mb-5"
-          alt="github_icon"
-      /></a>
+      <a href="https://github.com/renny1214" target="_blank" data-aos="fade-up" data-aos-easing="linear"><img
+          src="../../assets/images/github.png" class="icon img-fluid mt-3 mb-5" alt="github_icon" /></a>
     </div>
   </div>
 

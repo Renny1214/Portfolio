@@ -1,174 +1,97 @@
 <div>
   <diV class="pt-5 back ">
     <nav class="navbar navbar-expand-sm justify-content-between">
-      <a
-        class="nav-link text-light effect-1 font-weight-bold"
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-easing="linear"
-      ></a>
+      <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="2000"
+        data-aos-easing="linear"></a>
 
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a
-            class="nav-link text-light effect-1 font-weight-bold"
-            data-aos="fade-down"
-            data-aos-duration="1300"
-            data-aos-easing="linear"
-            href="/intro"
-            >WHO</a
-          >
+          <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="1300"
+            data-aos-easing="linear" href="/intro">WHO</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link text-light effect-1  font-weight-bold"
-            data-aos="fade-down"
-            data-aos-duration="2300"
-            data-aos-easing="linear"
-            href="/what"
-            >WHAT</a
-          >
+          <a class="nav-link text-light effect-1  font-weight-bold" data-aos="fade-down" data-aos-duration="2300"
+            data-aos-easing="linear" href="/what">WHAT</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link text-light effect-1 font-weight-bold"
-            data-aos="fade-down"
-            data-aos-duration="2800"
-            data-aos-easing="linear"
-            href="/work"
-            >WORK</a
-          >
+          <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="2800"
+            data-aos-easing="linear" href="/work">WORK</a>
         </li>
       </ul>
 
-      <a
-        class="nav-link text-light effect-1 font-weight-bold"
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        data-aos-easing="linear"
-        data-toggle="modal"
-        data-target="#myModal"
-        >CONTACT</a
-      >
+      <a class="nav-link text-light effect-1 font-weight-bold" data-aos="fade-down" data-aos-duration="2000"
+        data-aos-easing="linear" data-toggle="modal" data-target="#myModal">CONTACT</a>
     </nav>
 
     <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="abc">
-            <button type="button" class="close pr-4 pt-4" data-dismiss="modal">
+            <button type="button" class="close pr-4 pt-2" data-dismiss="modal">
               &times;
             </button>
             <div class="container-fluid custom-pos">
               <div class="font-weight-bold text-dark">
-                <div class="start-one text-center mb-1 mt-5">
+                <div class="start-one text-center mb-1">
                   Contact me
                 </div>
               </div>
-              <div
-                class="love start-one text-center mt-1 mb-1 text-dark"
-                data-aos="fade-up"
-              >
+              <div class="love start-one text-center mt-1 mb-1 text-dark" data-aos="fade-up">
                 Would love to hear from you!
               </div>
-  
-              <div class="te text-center">I am always open to new ideas and opportunities</div>
+
+              <div class="text-info text-center">I am always open to new ideas and opportunities</div>
             </div>
             <div>
               <div class="text-center">
                 <div class="justify-content-center d-flex text-dark">
                   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-                    <div class="row mt-5">
-  
+                    <div class="row mt-5 p-2">
+
                       <div class="col-sm-6">
-                        <div class="input-group a mb-4 ">
-                          <input
-                            type="text"
-                            formControlName="name"
-                            class="form-control"
-                            [ngClass]="{
+                        <div class="input-group mb-2">
+                          <input type="text" formControlName="name" class="form-control" [ngClass]="{
                               'is-invalid': submitted && f.name.errors
-                            }"
-                            placeholder="name"
-                            [(ngModel)]="name"
-                          />
-                          <div
-                            *ngIf="submitted && f.name.errors"
-                            class="invalid-feedback"
-                          ></div>
+                            }" placeholder="name" [(ngModel)]="name" />
+                          <div *ngIf="submitted && f.name.errors" class="invalid-feedback"></div>
                         </div>
-  
-                        <div class="input-group  a mb-3">
-                          <input
-                            type="text"
-                            formControlName="email"
-                            class="form-control"
-                            [ngClass]="{
+
+                        <div class="input-group mb-2">
+                          <input type="text" formControlName="email" class="form-control" [ngClass]="{
                               'is-invalid': submitted && f.email.errors
-                            }"
-                            placeholder="email"
-                            [(ngModel)]="email"
-                          />
-                          <div
-                            *ngIf="submitted && f.email.errors"
-                            class="invalid-feedback"
-                          >
-                            
+                            }" placeholder="email" [(ngModel)]="email" />
+                          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+
                           </div>
                         </div>
                       </div>
-  
+
                       <div class="col-sm-6">
-                        <div class="input-group a">
-                          <textarea
-                            formControlName="message"
-                            class="form-control textbox"
-                            [ngClass]="{
+                        <div class="input-group">
+                          <textarea formControlName="message" class="form-control textbox" [ngClass]="{
                               'is-invalid': submitted && f.message.errors
-                            }"
-                            placeholder="message"
-                            [(ngModel)]="message"
-                          ></textarea>
-                          <div
-                            *ngIf="submitted && f.message.errors"
-                            class="invalid-feedback"
-                          ></div>
+                            }" placeholder="message" [(ngModel)]="message"></textarea>
+                          <div *ngIf="submitted && f.message.errors" class="invalid-feedback"></div>
                         </div>
                       </div>
                     </div>
-  
-                    <div class="form-group a pl-5 pr-5">
+
+                    <div class="p-2 mt-3">
                       <button class="btn btn-sm rounded-0 btn4">Send</button>
                     </div>
                   </form>
                 </div>
               </div>
-              <div>
-                <div class=" text-center text-dark social">SOCIAL</div>
-                <div class="container-fluid mt-3 d-flex justify-content-center">
-                  <a
-                    href="https://www.instagram.com/renny.mittal/"
-                    target="_blank"
-                  >
-                    <img
-                      src="../../assets/images/instagram.png"
-                      class="img-fluid icon-size"
-                    />
+              <div class="mt-2">
+                <div class="container-fluid d-flex justify-content-center">
+                  <a href="https://www.instagram.com/renny.mittal/" target="_blank">
+                    <img src="../../assets/images/instagram.png" class="img-fluid icon-size" />
                   </a>
-                  <a
-                    href="https://www.linkedin.com/in/renny-mittal-97a84a1a0/"
-                    target="_blank"
-                  >
-                    <img
-                      src="../../assets/images/linkedin.png"
-                      class="img-fluid icon-size ml-2 mr-2"
-                    />
+                  <a href="https://www.linkedin.com/in/renny-mittal-97a84a1a0/" target="_blank">
+                    <img src="../../assets/images/linkedin.png" class="img-fluid icon-size ml-2 mr-2" />
                   </a>
                   <a href="https://github.com/renny1214" target="_blank">
-                    <img
-                      src="../../assets/images/github.png"
-                      class="img-fluid icon-size"
-                    />
+                    <img src="../../assets/images/github.png" class="img-fluid icon-size" />
                   </a>
                 </div>
               </div>
@@ -177,24 +100,13 @@
         </div>
       </div>
     </div>
-    <div
-      class="d-flex justify-content-center what font-weight-bold mt-5 mr-5 ml-5 position-relative"
-    >
-      <div
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="500"
-      >
+    <div class="d-flex justify-content-center what font-weight-bold mt-5 mr-5 ml-5 position-relative">
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         What.
       </div>
     </div>
 
-    <div
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="500"
-      class="arrow bottom"
-    >
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="arrow bottom">
       <span></span>
     </div>
   </diV>
@@ -538,11 +450,7 @@
 </div>
 
 <div class="round pt-5">
-  <div
-    class="text-center font-weight-bold traits pb-5"
-    data-aos="fade-up"
-    data-aos-easing="linear"
-  >
+  <div class="text-center font-weight-bold traits pb-5" data-aos="fade-up" data-aos-easing="linear">
     Some personality traits and behevorial skills!!
   </div>
 
@@ -616,22 +524,18 @@
       </div>
     </div>
     <div class="card card2">
-        <div class="card-info">
-          <div class="dropcap">C</div>
-          <div class="other">
-            reative. i count myself to be a creative person. I personally believe
-            - "Creativity doesn't wait for that perfect moment. It fashions its
-            own perfect moments out of ordinary ones." I love working and giving
-            everything a slight of my taste.
-          </div>
+      <div class="card-info">
+        <div class="dropcap">C</div>
+        <div class="other">
+          reative. i count myself to be a creative person. I personally believe
+          - "Creativity doesn't wait for that perfect moment. It fashions its
+          own perfect moments out of ordinary ones." I love working and giving
+          everything a slight of my taste.
         </div>
       </div>
+    </div>
   </div>
-  <div
-    class="text-center font-weight-bold traits pb-5"
-    data-aos="fade-up"
-    data-aos-easing="linear"
-  >
+  <div class="text-center font-weight-bold traits pb-5" data-aos="fade-up" data-aos-easing="linear">
     and many more...
   </div>
 </div>
