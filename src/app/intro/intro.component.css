@@ -149,7 +149,7 @@ a > span:after {
 }
 
 .start-one {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Raleway", sans-serif;
 }
 .start-two {
@@ -290,6 +290,10 @@ a.button:hover svg g circle {
     color: #ffd31d;
     font-size: 6rem;
   }
+  .start-one {
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+  }
   .third-page {
     color: #fff;
     background: -webkit-linear-gradient(
@@ -332,15 +336,7 @@ a.button:hover svg g circle {
 .contact-text {
   font-size: 24px;
 }
-.mail {
-  font-size: 2rem;
-  color: black;
-  padding-bottom: 30px;
-}
-.mail:hover {
-  color: #3b6978;
-  text-decoration: underline;
-}
+
 .icon-size {
   height: 50px;
   width: 50px;
@@ -358,30 +354,31 @@ a.button:hover svg g circle {
   .contact-text {
     font-size: 15px;
   }
-  .mail {
-    font-size: 24px;
-    color: black;
-    padding-bottom: 20px;
-
-  }
+  
   .social {
     letter-spacing: 0.1em;
+    padding-top: 0px;
   }
-  .mail {
-    font-size: 1.5rem;
-    color: black;
-    word-break: normal;
+  .a{
+    padding-left:10px;
+    padding-right:10px;
+      width : 100%;
   }
+ 
   .start-two {
     font-size: 30px;
     letter-spacing: 0.1rem;
     word-spacing: 0.1rem;
     font-family: "Raleway", sans-serif;
   }
+  .modal{
+      height: 100%;
+      
+  }
 
 }
 .social {
-  padding-top: 55px;
+  padding-top: 30px;
   letter-spacing: 0.1em;
 }
 
@@ -403,4 +400,17 @@ a.button:hover svg g circle {
 .container:hover .overlay {
   opacity: 1;
   cursor: pointer;
+}
+.textbox
+{
+  height: 100px;
+}
+.btn4 {
+  height: 30px;
+  width : 500px;
+  background-color: #494b6b;
+  color: white;
+}
+.btn4:hover {
+  color: #84a9ac;
 }

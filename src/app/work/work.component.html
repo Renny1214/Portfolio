@@ -51,64 +51,132 @@
     >
   </nav>
 
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <div class="abc">
-          <button type="button" class="close pr-4 pt-4" data-dismiss="modal">
-            &times;
-          </button>
-          <div class="container-fluid custom-pos">
-            <div class="font-weight-bold text-dark">
-              <div class="start-one text-center mb-5 mt-5" data-aos="fade-up">
-                Contact me
-              </div>
+=
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="abc">
+        <button type="button" class="close pr-4 pt-4" data-dismiss="modal">
+          &times;
+        </button>
+        <div class="container-fluid custom-pos">
+          <div class="font-weight-bold text-dark">
+            <div class="start-one text-center mb-1 mt-5">
+              Contact me
             </div>
-            <div
-              class="love start-one text-center mt-5"
-              data-aos="fade-up"
-            >
-              Would love to hear from you!
+          </div>
+          <div
+            class="love start-one text-center mt-1 mb-1 text-dark"
+            data-aos="fade-up"
+          >
+            Would love to hear from you!
+          </div>
+
+          <div class="text-info text-center">I am always open to new ideas and opportunities</div>
+        </div>
+        <div>
+          <div class="text-center">
+            <div class="justify-content-center d-flex text-dark">
+              <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="row mt-5">
+
+                  <div class="col-sm-6">
+                    <div class="input-group a mb-4 ">
+                      <input
+                        type="text"
+                        formControlName="name"
+                        class="form-control"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.name.errors
+                        }"
+                        placeholder="name"
+                        [(ngModel)]="name"
+                      />
+                      <div
+                        *ngIf="submitted && f.name.errors"
+                        class="invalid-feedback"
+                      ></div>
+                    </div>
+
+                    <div class="input-group  a mb-3">
+                      <input
+                        type="text"
+                        formControlName="email"
+                        class="form-control"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.email.errors
+                        }"
+                        placeholder="email"
+                        [(ngModel)]="email"
+                      />
+                      <div
+                        *ngIf="submitted && f.email.errors"
+                        class="invalid-feedback"
+                      >
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="input-group a">
+                      <textarea
+                        formControlName="message"
+                        class="form-control textbox"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.message.errors
+                        }"
+                        placeholder="message"
+                        [(ngModel)]="message"
+                      ></textarea>
+                      <div
+                        *ngIf="submitted && f.message.errors"
+                        class="invalid-feedback"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group a pl-5 pr-5">
+                  <button class="btn btn-sm rounded-0 btn4">Send</button>
+                </div>
+              </form>
             </div>
           </div>
           <div>
-            <div class="text-center mail font-weight-bold mb-2">
-              <a href="rennymittal1214@gmail.com">rennymittal1214@gmail.com</a>
-            </div>
-            <div>
-              <div class=" text-center text-dark social">SOCIAL</div>
-              <div class="container-fluid mt-4 d-flex justify-content-center">
-                <a
-                  href="https://www.instagram.com/renny.mittal/"
-                  target="_blank"
-                >
-                  <img
-                    src="../../assets/images/instagram.png"
-                    class="img-fluid icon-size"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/renny-mittal-97a84a1a0/"
-                  target="_blank"
-                >
-                  <img
-                    src="../../assets/images/linkedin.png"
-                    class="img-fluid icon-size ml-2 mr-2"
-                  />
-                </a>
-                <a href="https://github.com/renny1214" target="_blank">
-                  <img
-                    src="../../assets/images/github.png"
-                    class="img-fluid icon-size"
-                  />
-                </a>
-              </div>
+            <div class=" text-center text-dark social">SOCIAL</div>
+            <div class="container-fluid mt-3 d-flex justify-content-center">
+              <a
+                href="https://www.instagram.com/renny.mittal/"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/images/instagram.png"
+                  class="img-fluid icon-size"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/renny-mittal-97a84a1a0/"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/images/linkedin.png"
+                  class="img-fluid icon-size ml-2 mr-2"
+                />
+              </a>
+              <a href="https://github.com/renny1214" target="_blank">
+                <img
+                  src="../../assets/images/github.png"
+                  class="img-fluid icon-size"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
   <div
     class="d-flex justify-content-center what font-weight-bold mt-5 mr-5 ml-5 position-relative"
   >

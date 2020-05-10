@@ -23,6 +23,9 @@ a > span:after {
   position: absolute;
   transition: transform 0.5s ease;
 }
+.te{
+color:orange;
+}
 
 .effect-1 {
   padding-top: 10px;
@@ -137,7 +140,7 @@ a > span:after {
   align-items: center;
 }
 .social {
-  padding-top: 55px;
+  padding-top: 30px;
   letter-spacing: 0.1em;
 }
 .love {
@@ -614,6 +617,19 @@ figure {
   .card:first-child {
     display: none;
   }
+  .modal{
+    height: 100%;
+    
+}
+  .social {
+    letter-spacing: 0.1em;
+    padding-top: 0px;
+  }
+  .a{
+    padding-left:10px;
+    padding-right:10px;
+      width : 100%;
+  }
   .card2 {
     min-width: 300px;
     max-width: 300px;
@@ -685,4 +701,21 @@ figure {
 
 .card2 {
   display: none;
+}
+.textbox
+{
+  height: 100px;
+}
+.btn4 {
+  height: 30px;
+  width : 500px;
+  background-color: #494b6b;
+  color: white;
+}
+.btn4:hover {
+  color: #84a9ac;
+}
+.start-one {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
 }

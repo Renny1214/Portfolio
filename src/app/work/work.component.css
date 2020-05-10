@@ -357,6 +357,19 @@ a{
 }
 
 @media screen and (max-width: 750px) {
+  .modal{
+    height: 100%;
+    
+}
+  .social {
+    letter-spacing: 0.1em;
+    padding-top: 0px;
+  }
+  .a{
+    padding-left:10px;
+    padding-right:10px;
+      width : 100%;
+  }
   .contact-text {
     font-size: 15px;
   }
@@ -365,7 +378,7 @@ a{
     color: black;
   }
   .social {
-    padding-top: 20px;
+    padding-top: 0px;
     letter-spacing: 0.1em;
   }
   .mail {
@@ -409,7 +422,7 @@ a{
   align-items: center;
 }
 .social {
-  padding-top: 55px;
+  padding-top: 30px;
   letter-spacing: 0.1em;
 }
 .love {
@@ -442,4 +455,21 @@ a{
 .undefined {
   padding-top: 0px;
   padding-left: 30px;
+}
+.start-one {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+.textbox
+{
+  height: 100px;
+}
+.btn4 {
+  height: 30px;
+  width : 500px;
+  background-color: #494b6b;
+  color: white;
+}
+.btn4:hover {
+  color: #84a9ac;
 }
