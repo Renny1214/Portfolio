@@ -54,12 +54,12 @@
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="abc">
-          <button type="button" class="close pr-4 pt-4" data-dismiss="modal">
+          <button type="button" class="close pr-4 pt-2" data-dismiss="modal">
             &times;
           </button>
           <div class="container-fluid custom-pos">
             <div class="font-weight-bold text-dark">
-              <div class="start-one text-center mb-1 mt-5">
+              <div class="start-one text-center mb-1">
                 Contact me
               </div>
             </div>
@@ -76,10 +76,10 @@
             <div class="text-center">
               <div class="justify-content-center d-flex text-dark">
                 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-                  <div class="row mt-5">
+                  <div class="row mt-5 p-2">
 
                     <div class="col-sm-6">
-                      <div class="input-group a mb-4 ">
+                      <div class="input-group mb-2">
                         <input
                           type="text"
                           formControlName="name"
@@ -96,7 +96,7 @@
                         ></div>
                       </div>
 
-                      <div class="input-group  a mb-3">
+                      <div class="input-group mb-2">
                         <input
                           type="text"
                           formControlName="email"
@@ -117,7 +117,7 @@
                     </div>
 
                     <div class="col-sm-6">
-                      <div class="input-group a">
+                      <div class="input-group">
                         <textarea
                           formControlName="message"
                           class="form-control textbox"
@@ -135,15 +135,14 @@
                     </div>
                   </div>
 
-                  <div class="form-group a pl-5 pr-5">
+                  <div class="p-2 mt-3">
                     <button class="btn btn-sm rounded-0 btn4">Send</button>
                   </div>
                 </form>
               </div>
             </div>
-            <div>
-              <div class=" text-center text-dark social">SOCIAL</div>
-              <div class="container-fluid mt-3 d-flex justify-content-center">
+            <div class="mt-2">
+              <div class="container-fluid d-flex justify-content-center">
                 <a
                   href="https://www.instagram.com/renny.mittal/"
                   target="_blank"

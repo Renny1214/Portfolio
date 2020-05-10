@@ -359,21 +359,12 @@ a.button:hover svg g circle {
     letter-spacing: 0.1em;
     padding-top: 0px;
   }
-  .a{
-    padding-left:10px;
-    padding-right:10px;
-      width : 100%;
-  }
  
   .start-two {
     font-size: 30px;
     letter-spacing: 0.1rem;
     word-spacing: 0.1rem;
     font-family: "Raleway", sans-serif;
-  }
-  .modal{
-      height: 100%;
-      
   }
 
 }
@@ -407,7 +398,7 @@ a.button:hover svg g circle {
 }
 .btn4 {
   height: 30px;
-  width : 500px;
+  width : 100%;
   background-color: #494b6b;
   color: white;
 }
