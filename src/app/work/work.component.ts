@@ -37,6 +37,10 @@ export class WorkComponent implements OnInit {
   }
   url = "https://rishabh-dev-portfolio.herokuapp.com/mail";
 
+  resetAlert(){
+    this.showAlert=false;
+  }
+
   onSubmit() {
     this.submitted = true;
     if (this.registerForm.invalid) {

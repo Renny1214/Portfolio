@@ -103,7 +103,7 @@
 <div *ngIf='showAlert' class="animate-alert alert bg-alert alert-dismissible fade show rounded-0 p-5 fixed-top">
     <div class="container">
       <button type="button" class="close" data-dismiss="alert" (click)='resetAlert()'>&times;</button>
-      <h1 class="display-4">Hey <span class="text-transform-capitalize"></span></h1>
+      <h1 class="display-4">Hey {{ name }}<span class="text-transform-capitalize"></span></h1>
       <div class="alert-sub-heading">Your message has been sent. I will contact you as soon as possible.</div>
     </div>
   </div>
