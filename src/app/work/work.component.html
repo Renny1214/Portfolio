@@ -99,6 +99,16 @@
         </div>
       </div>
     </div>
+    
+<div *ngIf='showAlert' class="animate-alert alert bg-alert alert-dismissible fade show rounded-0 p-5 fixed-top">
+    <div class="container">
+      <button type="button" class="close" data-dismiss="alert" (click)='resetAlert()'>&times;</button>
+      <h1 class="display-4">Hey <span class="text-transform-capitalize"></span></h1>
+      <div class="alert-sub-heading">Your message has been sent. I will contact you as soon as possible.</div>
+    </div>
+  </div>
+
+  
   </div>
   <div class="d-flex justify-content-center what font-weight-bold mt-5 mr-5 ml-5 position-relative">
     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
@@ -115,18 +125,19 @@
   <div class="title text-center font-weight-bold pt-5 " data-aos="fade-up" data-aos-easing="linear">
     {{ project.title }}
   </div>
-  <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
+  <div class="text-center mt-2 text-info font-weight-bold" data-aos="fade-up" data-aos-easing="linear">
     {{ project.subHeading }}
   </div>
 
   <div class="row">
     <div class="col-sm-3"></div>
-    <div class="mt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
+    <div class="mt-5 col-sm-6 text-dark desc text-center" data-aos="fade-up" data-aos-easing="linear">
       {{ project.desc }}
     </div>
     <div class="col-sm-3"></div>
   </div>
-  <div class="text d-flex justify-content-around mt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
+  
+  <div class="text d-flex justify-content-around mt-3 text-dark font-weight-bold" data-aos="fade-up" data-aos-easing="linear">
     Links:
   </div>
   <div class="row">
@@ -134,15 +145,17 @@
     <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
       <div class="mb-3 pl-2 pr-2 text-center">
         <div>
-          <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project.link1 }}</a>
+          <a href="#" class="d-flex justify-content-center pt-2 text-info effect-1">{{ project.link1 }}</a>
         </div>
         <div>
-          <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project.link2 }}</a>
+          <a href="#" class="d-flex justify-content-center pt-1 text-info effect-1">{{ project.link2 }}</a>
         </div>
       </div>
+      
     </div>
     <div class="col-sm-4"></div>
   </div>
+  
 </div>
 
 <div class="container-fluid about-me">
@@ -152,27 +165,27 @@
       <div class="title text-center font-weight-bold pt-5" data-aos="fade-up" data-aos-easing="linear">
         {{ project1.title }}
       </div>
-      <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
+      <div class="text-center mt-2 font-weight-bold text-info" data-aos="fade-up" data-aos-easing="linear">
         {{ project1.subHeading }}
       </div>
       <div class="row">
         <div class="col-sm-3"></div>
-        <div class="mt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
+        <div class="mt-5 col-sm-6 text-dark desc text-center" data-aos="fade-up" data-aos-easing="linear">
           {{ project1.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
-      <div class="text d-flex justify-content-around mt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
+      <div class="text d-flex font-weight-bold justify-content-around mt-3 text-dark" data-aos="fade-up" data-aos-easing="linear">
         Links:
       </div>
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
           <div class="pl-2 pr-2 text-center">
-            <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project1.link1 }}</a>
+            <a href="#" class="d-flex justify-content-center pt-2 text-info effect-1">{{ project1.link1 }}</a>
           </div>
           <div class="pl-2 pr-2 text-center">
-            <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project1.link2 }}</a>
+            <a href="#" class="d-flex justify-content-center pt-1 text-info effect-1">{{ project1.link2 }}</a>
           </div>
         </div>
         <div class="col-sm-4"></div>
@@ -186,27 +199,27 @@
       <div class="title text-center pt-5 font-weight-bold" data-aos="fade-up" data-aos-easing="linear">
         {{ project2.title }}
       </div>
-      <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
+      <div class="text-center mt-2 font-weight-bold text-info" data-aos="fade-up" data-aos-easing="linear">
         {{ project2.subHeading }}
       </div>
       <div class="row">
         <div class="col-sm-3"></div>
-        <div class="mt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
+        <div class="mt-5 col-sm-6 text-dark desc text-center" data-aos="fade-up" data-aos-easing="linear">
           {{ project2.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
-      <div class="text d-flex justify-content-around pt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
+      <div class="text d-flex font-weight-bold justify-content-around pt-3 text-dark" data-aos="fade-up" data-aos-easing="linear">
         Links:
       </div>
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
           <div class="pl-2 pr-2 text-center">
-            <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project2.link1 }}</a>
+            <a href="#" class="d-flex justify-content-center pt-2 text-info effect-1">{{ project2.link1 }}</a>
           </div>
           <div class="pl-2 pr-2 text-center">
-            <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project2.link2 }}</a>
+            <a href="#" class="d-flex justify-content-center pt-1 text-info effect-1">{{ project2.link2 }}</a>
           </div>
         </div>
         <div class="col-sm-4"></div>
@@ -220,27 +233,27 @@
       <div class="title text-center pt-5 font-weight-bold" data-aos="fade-up" data-aos-easing="linear">
         {{ project3.title }}
       </div>
-      <div class="text-center mt-2 text-light" data-aos="fade-up" data-aos-easing="linear">
+      <div class="text-center mt-2 text-info font-weight-bold" data-aos="fade-up" data-aos-easing="linear">
         {{ project3.subHeading }}
       </div>
       <div class="row">
         <div class="col-sm-3"></div>
-        <div class="pt-5 col-sm-6 text-light desc text-center" data-aos="fade-up" data-aos-easing="linear">
+        <div class="pt-5 col-sm-6 text-dark desc text-center" data-aos="fade-up" data-aos-easing="linear">
           {{ project3.desc }}
         </div>
         <div class="col-sm-3"></div>
       </div>
-      <div class="text d-flex justify-content-around pt-3 text-light" data-aos="fade-up" data-aos-easing="linear">
+      <div class="text d-flex font-weight-bold justify-content-around pt-3 text-dark" data-aos="fade-up" data-aos-easing="linear">
         Links:
       </div>
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4" data-aos="fade-up" data-aos-easing="linear">
           <div class="pl-2 pr-2 text-center">
-            <a href="#" class="d-flex justify-content-center pt-2 text-light effect-1">{{ project3.link1 }}</a>
+            <a href="#" class="d-flex justify-content-center pt-2 text-info effect-1">{{ project3.link1 }}</a>
           </div>
           <div class="pl-2 pr-2 text-center">
-            <a href="#" class="d-flex justify-content-center pt-1 text-light effect-1">{{ project3.link2 }}</a>
+            <a href="#" class="d-flex justify-content-center pt-1 text-info effect-1">{{ project3.link2 }}</a>
           </div>
         </div>
         <div class="col-sm-4"></div>
@@ -299,3 +312,5 @@
 </div>
 
 <app-scroll-bar></app-scroll-bar>
+
+
