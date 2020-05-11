@@ -1,0 +1,51 @@
+<div class="container bg-grad">
+  <button type="button" class="close p-3" data-dismiss="modal">&times;</button>
+  <div class="row">
+    <div class="col-sm-7 center-pos justify-content-center p-5">
+      <p class="heading">leave me a <span class="text-success font-weight-bold">message</span></p>
+
+      <form method="dialog">
+        <div class="form-group">
+          <input type="text" class="form-control text-muted" (keyup)="getName($event)" placeholder="NAME">
+        </div>
+
+        <div class="form-group">
+          <input type="email" class="form-control text-muted" (keyup)="getEmail($event)" placeholder="E-MAIL">
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control text-muted" rows="4" (keyup)="getMessage($event)"
+            placeholder="MESSAGE"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-success width-100 rounded-0" (click)="sendMessage()">Send</button>
+      </form>
+    </div>
+    <div class="col-sm-5 center-pos p-3 justify-content-center">
+      <p class="heading">Would love to hear from you</p>
+      <p class="subheading mb-5 text-muted">I am open all kind of ideas and opportunities</p>
+      <p>Contact me at :</p>
+
+      <div class="mt-2">
+        <a href="https://www.instagram.com/renny.mittal/" target="_blank">
+          <img src="../../assets/images/instagram.png" class="img-fluid icon-size">
+        </a>
+
+        <a href="https://www.linkedin.com/in/renny-mittal-97a84a1a0/" target="_blank">
+          <img src="../../assets/images/linkedin.png" class="img-fluid icon-size ml-3 mr-3">
+        </a>
+
+        <a href="https://github.com/renny1214" target="_blank">
+          <img src="../../assets/images/github.png" class="img-fluid icon-size">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--alert-->
+<div *ngIf="showAlert" class="alert alert-success alert-dismissible fade show fixed-top p-3">
+  <button type="button" class="close" data-dismiss="alert" (click)="resetAlert()">&times;</button>
+  <p class="display-4">Hey {{ data.name }}</p>
+  <p>Your message has been sent, I will contact you shortly.</p>
+</div>

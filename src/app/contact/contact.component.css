@@ -1,0 +1,38 @@
+.bg-grad {
+  background: -webkit-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: -o-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: -moz-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  background: linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+  width: 100%;
+  color: #333333;
+}
+.center-pos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading{
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.subheading{
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.height-80{
+  height: 80vh;
+}
+.icon-size{
+  height: 50px;
+  opacity: 0.7;
+}
+.icon-size:hover{
+  opacity: 1;
+}
+.width-100{
+  width: 100%;
+}
