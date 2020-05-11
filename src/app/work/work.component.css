@@ -325,14 +325,7 @@ a.button:hover svg g circle {
 a{
   cursor: pointer;
 }
-.abc {
-  background: -webkit-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
-  background: -o-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
-  background: -moz-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
-  background: linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
-  height: 80vh;
-  width: 100%;
-}
+
 
 .modal-content {
   border-radius: 0px !important;
@@ -473,6 +466,7 @@ a{
 .btn4:hover {
   color: #84a9ac;
 }
+
 .alert-sub-heading {
   font-size: 1.2rem;
 }
@@ -494,5 +488,5 @@ a{
   }
 }
 .bg-alert{
-  background-color: #dae1e7;
+  background-color: #202040;
 }

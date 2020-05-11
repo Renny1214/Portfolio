@@ -1,0 +1,8 @@
+.abc {
+    background: -webkit-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+    background: -o-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+    background: -moz-linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+    background: linear-gradient(110deg, #effcef 60%, #ccedd2 60%);
+    height: 80vh;
+    width: 100%;
+  }

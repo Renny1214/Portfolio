@@ -16,7 +16,7 @@ export class WhatComponent implements OnInit {
     private formBuilder: FormBuilder) { }
   registerForm: FormGroup;
   submitted = false;
-
+    showAlert = false;
   name;
   email;
   message;
@@ -37,6 +37,9 @@ export class WhatComponent implements OnInit {
     get f() { return this.registerForm.controls; }
     url = "https://rishabh-dev-portfolio.herokuapp.com/mail"
 
+    resetAlert(){
+      this.showAlert=false;
+    }
     onSubmit() {
       this.submitted = true;
       if (this.registerForm.invalid) {
@@ -51,7 +54,7 @@ export class WhatComponent implements OnInit {
           recieve : 'rennymittal1214@gmail.com'
         };
           this.httpClient.post(this.url,json).subscribe((res: any)=>{
-              alert("mail sent"+this.name);
+            this.showAlert = true;
           }
           );
       } 
