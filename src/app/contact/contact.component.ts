@@ -9,13 +9,14 @@ import { HttpClient } from '@angular/common/http';
 export class ContactComponent implements OnInit {
 
   data = {
-    name: '',
-    email: '',
-    message: '',
+    name: null,
+    email: null,
+    message: null,
     recieve: 'rennymittal1214@gmail.com'
   }
 
   showAlert = false;
+  showError = false;
 
   constructor(private httpClient: HttpClient) { }
 
@@ -37,13 +38,28 @@ export class ContactComponent implements OnInit {
   sendMessage() {
     const url = 'https://rishabh-dev-portfolio.herokuapp.com/mail';
 
-    this.httpClient.post(url, this.data).subscribe((res: any) => {
-      this.showAlert = true;
-    });
+    if (this.isValidated()) {
+      this.httpClient.post(url, this.data).subscribe((res: any) => {
+        this.showAlert = true;
+      });
+    }
+    else{
+      this.showError = true;
+    }
+  }
+
+  isValidated() {
+    if(this.data.name != null && this.data.email != null && this.data.message != null && 
+      this.data.name != '' && this.data.email != '' && this.data.message != '') {
+      return true;
+    }
+
+    return false;
   }
 
   resetAlert() {
     this.showAlert = false;
+    this.showError = false;
   }
 
 }
