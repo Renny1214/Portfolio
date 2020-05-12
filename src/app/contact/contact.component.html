@@ -1,24 +1,22 @@
 <div class="container bg-grad">
   <button type="button" class="close p-3" data-dismiss="modal">&times;</button>
   <div class="row">
-    <div class="col-sm-7 center-pos justify-content-center p-5">
+    <div class="col-sm-7 center-pos justify-content-center pl-3 pr-3 pt-5 pb-5">
       <p class="heading">leave me a <span class="text-success font-weight-bold">message</span></p>
 
-      <form method="dialog">
+      <form method="dialog" (submit)='sendMessage()'>
         <div class="form-group">
-          <input type="text" class="form-control text-muted" (keyup)="getName($event)" placeholder="NAME">
+          <input type="text" class="form-control text-muted" placeholder="Your Name" (keyup)='getName($event)'
+            required />
         </div>
-
-        <div class="form-group">
-          <input type="email" class="form-control text-muted" (keyup)="getEmail($event)" placeholder="E-MAIL">
+        <div class="form-group mt-3">
+          <input type="email" class="form-control text-muted" placeholder="Email" (keyup)='getEmail($event)' required />
         </div>
-
-        <div class="form-group">
-          <textarea class="form-control text-muted" rows="4" (keyup)="getMessage($event)"
-            placeholder="MESSAGE"></textarea>
+        <div class="form-group mt-5">
+          <textarea class="form-control text-muted" placeholder="Message" rows="5" (keyup)='getMessage($event)'
+            required></textarea>
         </div>
-
-        <button type="button" class="btn btn-success width-100 rounded-0" (click)="sendMessage()">Send</button>
+        <button type="submit" class="btn btn-success rounded-0 width-full mt-3 text-center">Send Message</button>
       </form>
     </div>
     <div class="col-sm-5 center-pos p-3 justify-content-center">
@@ -48,4 +46,9 @@
   <button type="button" class="close" data-dismiss="alert" (click)="resetAlert()">&times;</button>
   <p class="display-4">Hey {{ data.name }}</p>
   <p>Your message has been sent, I will contact you shortly.</p>
+</div>
+
+<div *ngIf="showError" class="alert alert-danger alert-dismissible fade show fixed-top p-3 rounded-0">
+  <button type="button" class="close" data-dismiss="alert" (click)="resetAlert()">&times;</button>
+  <h1 class="display-4 text-center">Please enter correct data</h1>
 </div>
