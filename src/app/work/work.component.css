@@ -98,7 +98,7 @@ a > span:after {
 
 .header,
 .intro-image {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
 }
 .title {
@@ -107,7 +107,7 @@ a > span:after {
 }
 
 .about-me {
-  height: 70vh;
+  height: 80vh;
 }
 .about-me-parallex {
   background-image: url("../../assets/images/ecom2.jpeg");
@@ -118,7 +118,7 @@ a > span:after {
   background-size: cover;
 }
 .about-me-text {
-  height: 70vh;
+  height: 80vh;
 }
 
 .skills-parallex {
@@ -130,7 +130,7 @@ a > span:after {
   background-repeat: no-repeat;
 }
 .orange {
-  height: 70vh;
+  height: 80vh;
 }
 
 .skills-parallex1 {

@@ -44,7 +44,7 @@ export class WorkComponent implements OnInit {
       title: "Taxi service",
       subHeading: "A taxi service website",
       desc:
-        "This frontend website I made for a competition held at my college promises. This webapp made me learn a lot more about animations and frontend designing. This website is completely made by using Angualar 7 . It has basic webpages like safety , contact us , book a ride etc . This website takes the users input of his start and destination and calculate the distance between them using google map andbooks a cab or any other vehicle of their hoice. I won best content for this website.",
+        "This frontend website I made for a competition held at my college promises. This webapp made me learn a lot more about animations and frontend designing. This website is completely made by using Angular 7 . It has basic webpages like safety , contact us , book a ride etc . This website takes the users input of his start and destination and calculate the distance between them using google map andbooks a cab or any other vehicle of their hoice. I won best content for this website.",
       link1: "https://github.com/rishabh091/taxi-service.git"
     }
   ];
